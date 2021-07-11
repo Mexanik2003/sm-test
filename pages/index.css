@@ -1,0 +1,77 @@
+@import url(../vendor/normalize.css);
+
+
+
+
+.b-page {
+    background-color: grey;
+}
+
+.page {
+    position: relative;
+}
+
+.header {
+    background-image: url("../images/header_bg_1.png");
+    background-size: cover;
+    height: 400px;
+    padding: 16px 20px 0px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right__menu-icon {
+    margin-left: 16px;
+}
+
+.logo-top {
+    margin: auto 0;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 125px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-buttons {
+    position: absolute;
+    left: 0px;
+    top: 115px;
+    padding-left: 20px;
+}
+
+.slider-container {
+    width: 280px;
+    height: 300px;
+}
+
+.slider-img {
+    margin: 0;
+}
+
+.slider-buttons__btn {
+    margin: 0 12px 0 12px;
+}
+
+.slider-buttons__btn-img {
+    width: 32px;
+    height: 32px;
+}
+
+.slider-additem__btn {
+    position: absolute;
+    top: 262px;
+}
+
