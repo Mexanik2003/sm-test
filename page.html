@@ -24,20 +24,22 @@
 
     <main class="content">
       <section class="slider">
-        <div class="slider-buttons">
-          <a class="slider-buttons__btn">
-            <img class="slider-buttons__btn-img" src="images/arrow_left_yellow.png" />
-          </a>
-          <a class="slider-buttons__btn">
-            <img class="slider-buttons__btn-img" src="images/arrow_right_yellow.png" />
-          </a>
-        </div>
         <div class="slider-container">
-          <img class="slider-img" src="./images/slide1.png" />
+          <div class="slider-inner">
+            <img class="slider-img" src="./images/slide1.png" />
+            <a class="slider__link" href="#">
+              <span class="slider__link_semibold">Контейнерные</span> грузоперевозки
+            </a>
+            <div class="slider-descr">
+              <div class="slider-descr__icon"></div>
+              <p class="slider-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+            </div>
+          </div>
+          <div class="slider-buttons">
+            <button class="slider-buttons__btn-left"></button>
+            <button class="slider-buttons__btn-right"></button>
+          </div>
         </div>
-        <a class="slider-additem__btn">
-          <img class="slider-additem__btn-img" src="images/add_item_btn.png" />
-        </a>
     </section>
     <section class="delivery-features">
       <ul class="features-block">
@@ -97,15 +99,11 @@
 
     <section class="news">
       <div class="news-header">
-          <a class="section__title" href="#">Новости</h2>
+          <h2 class="section__title" href="#">Новости</h2>
           <div class="news-list-controls">
-            <a class="newslist__btn">
-              <img class="newslist__btn-img" src="images/arrow_left_white.png" />
-            </a>
-            <a class="newslist__btn">
-              <img class="newslist__btn-img" src="images/arrow_right_white.png" />
-            </a>
-            </div>
+            <button class="newslist__btn-left"></button>
+            <button class="newslist__btn-right"></button>
+          </div>
 
       </div>
       <a class="allnews-link" href="#">Все новости</a>
