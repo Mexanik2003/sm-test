@@ -35,7 +35,7 @@
     margin-left: 16px;
 }
 
-.logo-top {
+.logo {
     margin: auto 0;
 }
 
@@ -307,7 +307,7 @@ textarea.callback-form__input {
 }
 
 .contacts {
-    padding: 45px 0 50px 0;
+    padding: 45px 0 0 0;
     background-color: white;
 }
 
@@ -355,13 +355,38 @@ textarea.callback-form__input {
 }
 
 .contacts-map {
-    width: 320px;
+    width: 100vw;
     height: 240px;
 }
 
 
 .footer {
-    height: 200px;
+    padding: 35px 0 0 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 55px 20px;
+    margin: 25px 0 0 0;
+}
+
+.footer__text {
+    margin: 0 0 4px 0;
+    color: white;
+    font-size: 10px;
+}
+.footer__link {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 4px 0;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.logo_footer {
+    margin-left: 20px;
 }
 
 
