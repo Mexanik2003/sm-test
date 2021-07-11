@@ -5,10 +5,26 @@
     font-display: swap;
     src: url("opensans_light.ttf") format("truetype");
   }
-@font-face {
+
+  @font-face {
     font-family: 'Opensans';
     font-style:  normal;
     font-weight: 900;
     font-display: swap;
     src: url("opensans_extrabold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: 'Opensans';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("opensans_semibold.ttf") format("truetype");
+  }  
+  @font-face {
+    font-family: 'Opensans';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("opensans_condencedbold.ttf") format("truetype");
   }
