@@ -86,7 +86,7 @@
         <p class="formfield__title">Откуда</p>
         <input class="formfield__textinput" type="text" id="from">
         <p class="formfield__title">Куда</p>
-        <input class="formfield__textinput" type="text" id="from">
+        <input class="formfield__textinput" type="text" id="to">
         <p class="formfield__title">Вес груза</p>
 
 
@@ -97,7 +97,7 @@
 
     <section class="news">
       <div class="news-header">
-          <a class="news-header__title" href="#">Новости</h2>
+          <a class="section__title" href="#">Новости</h2>
           <div class="news-list-controls">
             <a class="newslist__btn">
               <img class="newslist__btn-img" src="images/arrow_left_white.png" />
@@ -113,17 +113,17 @@
         <li class="news-item">
           <img class="newsitem__img" src="images/newsitem1_img.png" />
           <div class="newsitem-content">
-            <p class="newsitem-content__date">
-              10 
-              <span class="newsitem-content__date newsitem-content__date_small">
-                апреля
-              </span>
-            </p>
-            <p class="newsitem-content__title">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
-            <a class="newsitem-content-more">
-              <img class="more-icon" />
-              Подробнее
-            </a>
+            <div class="newsitem-content-date">
+              <p class="newsitem-content__num">10</p>
+              <p class="newsitem-content__month">апреля</p>
+            </div>
+            <div class="newsitem-content-text">
+              <p class="newsitem-content__title">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
+              <div class="newsitem-content-more-container">
+                <img class="newsitem-content-more__more-icon" src="./images/more_link_icon.png"/>
+                <a class="newsitem-content-more__link">Подробнее</a>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
@@ -131,12 +131,60 @@
 
 
     </section>
-    <section class="answers"></section>
-    <section class="contacts"></section>
+    <section class="callback">
+      <form class="callback-container" action="callback.php">
+        <h2 class="section__title section__title_margin">Свяжитесь с&nbsp;нами</h2>
+        <input class="callback-form__input" type="text" placeholder="Ваше имя"   id="name">
+        <input class="callback-form__input" type="text" placeholder="Телефон"    id="phone">
+        <input class="callback-form__input" type="text" placeholder="E-mail"     id="email">
+        <textarea class="callback-form__input" placeholder="Сообщение" id="text"></textarea>
+        <button class="callback-form__submit" type="submit">Отправить</button>
+      </form>
+    </section>
+    <section class="contacts">
+      <div class="contacts-container">
+        <h2 class="section__title section__title_contacts">Контакты</h2>
+        <div class="contacts-block">
+          <p class="contacts-block__title">
+            Наш офис
+          </p>
+          <p class="contacts-block__text">
+            Россия, 620014, Екатеринбург ул. Маршала Жукова, 10
+          </p>
+        </div>
+        <div class="contacts-block">
+          <p class="contacts-block__title">
+            Вы можете связаться с нами
+          </p>
+          <p class="contacts-block__phone">
+            +7 (343) 999-88-77
+          </p>
+          <p class="contacts-block__email">
+            example@mail.com
+          </p>
+        </div>
+        <button class="contacts__callbtn">Заказать звонок</button>
+      </div>
+      <div class="contacts-map" id="map"></div>
+      <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1Eeg8iAT6pDTj7sywGVJJugKR11cwNObm&hl=ru" width="320" height="240"></iframe> -->
+    </section>
       
     </main>
  
     <footer class="footer">
     </footer>
+  <script>
+    function initMap() {
+      var coordinates = {
+        lat: 47.212325, 
+        lng: 38.933663
+      }      
+      let map = new google.maps.Map(document.getElementById('map'), {
+          center: coordinates
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaePDregXKVB_5TyQ7kC_fiqqSwBhZ33Q&callback=initMap"></script>
 </body>
+
 </html>
