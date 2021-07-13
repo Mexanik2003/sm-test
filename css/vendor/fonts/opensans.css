@@ -17,6 +17,14 @@
   @font-face {
     font-family: 'Opensans';
     font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("opensans_bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: 'Opensans';
+    font-style:  normal;
     font-weight: 700;
     font-display: swap;
     src: url("opensans_semibold.ttf") format("truetype");

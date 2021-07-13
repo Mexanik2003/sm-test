@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/opensans.css);
+@import url(../vendor/jquery-ui.css);
 
 
 
@@ -162,29 +163,6 @@
     display: none;
 }
 
-
-/* 
-
-
-.slider-container {
-    position: relative;
-    padding: 0 20px;
-}
-
-.slide {
-    position: absolute;
-    top: 0px;
-    left: 5vw;
-    right: 9vw;
-    max-width: 320px;
-} 
-
-
-
-
-
-*/
-
 .delivery-features {
     background-color: #2f2d38;
 }
@@ -210,7 +188,7 @@
 .description {
     background-color: #2b2933;
     margin: 0;
-    padding: 85px 0 640px 0;
+    padding: 85px 0 0 0;
 }
 
 .description__title {
@@ -236,8 +214,63 @@
 }
 
 .calc {
+    background-color: #2b2933;
+    margin: 0;
+    padding: 50px 0 580px 0;
+
+}
+
+.calc-inner {
     height: 700px;
-    display: none;
+    width: 280px;
+    left: 20px;
+    /* right: -20px; */
+    position: absolute;
+    background-color: thistle;
+}
+
+.calc-form-container {
+    padding: 30px 18px;
+}
+
+.calc__title {
+    font-weight: 900;
+    color: white;
+    font-size: 36px;
+
+}
+
+.formfield__title {
+    font-weight: 800;
+    color: white;
+    font-size: 11px;
+    margin: 23px 0 8px 0;
+}
+
+.formfield__select {
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    line-height: 30px;
+    position: relative;
+}}
+
+#slider-weight-value {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+	width: 80px;
+	height: 24px;
+	top: 50%;
+	margin-top: -14px;
+	text-align: center;
+	line-height: 24px;
+	outline: none;
+}
+
+.pick-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .news {

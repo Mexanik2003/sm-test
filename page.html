@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABC Logistics</title>
   <link rel="stylesheet" href="./css/pages/page.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body class="b-page">
   <div class="page">
@@ -128,20 +131,48 @@
       <p class="description__text">Рыночная ситуация изящно отражает рекламный макет, не считаясь с затратами. Перераспределение бюджета переворачивает product placement, осознавая социальную ответственность бизнеса. Повышение жизненных стандартов амбивалентно. Маркетингово-ориентированное издание концентрирует диктат потребителя, полагаясь на инсайдерскую информацию. Рейтинг традиционно развивает диктат потребителя.</p>
     </section>
 
-    <div class="calc">
-      <h2 class="calc__title">Расчет доставки</h2>
-      <form action="handler.php">
-        <p class="formfield__title">Откуда</p>
-        <input class="formfield__textinput" type="text" id="from">
-        <p class="formfield__title">Куда</p>
-        <input class="formfield__textinput" type="text" id="to">
-        <p class="formfield__title">Вес груза</p>
+    <section class="calc">
+      <div class="calc-inner">
+        <div class="calc-form-container">
+          <h2 class="calc__title">Расчет доставки</h2>
+          <form action="handler.php">
+            <p class="formfield__title">Откуда</p>
+            <select id="from" class="formfield__select">
+              <option value='1' selected>Москва</option>
+              <option value='2'>Санкт-Петербург</option>
+              <option value='3'>Екатеринбург</option>
+            </select>
+            <p class="formfield__title">Куда</p>
+            <select id="to" class="formfield__select">
+              <option value='1'>Москва</option>
+              <option value='2' selected>Санкт-Петербург</option>
+              <option value='3'>Екатеринбург</option>
+            </select>
+            <p class="formfield__title">Вес груза</p>
+            <div id="slider-weight">
+              <div id="slider-weight-slider" class="ui-slider-handle"></div>
+              <div id="slider-weight-value"></div>
+              <input type="text" id="weight" readonly style="visibility: hidden;">
+            </div>
+            <div class="pick-container">
+              <label class="formfield__title">
+                <input type="radio" name="get-variant" value="1">
+                Забрать курьером
+              </label>
+              <label class="formfield__title">
+                <input type="radio" name="get-variant" value="2">
+                Заберу сам
+              </label>
+              <label class="formfield__title">
+                <input type="checkbox" name="insurance" value="2">
+                Заберу сам
+              </label>
+            </div>
+          </form> 
+        </div>
+      </div>
 
-
-
-
-       </form> 
-    </div>
+    </section>
 
     <section class="news">
       <div class="news-header">
@@ -237,8 +268,6 @@
   </footer>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./js/script.js"></script>
   <script>
     function initMap() {
       var coordinates = {
