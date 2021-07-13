@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABC Logistics</title>
-  <link rel="stylesheet" href="./pages/page.css">
+  <link rel="stylesheet" href="./css/pages/page.css">
 </head>
 <body class="b-page">
   <div class="page">
@@ -22,55 +22,71 @@
       </div>
     </header>
 
-    <main class="content">
-      <section class="slider">
-        <div class="slider-container">
-          <div class="slide">
-            <img class="slide-img" src="./images/slide1.png" />
-            <a class="slide__link" href="#">
-              <span class="slide__link_semibold">Контейнерные</span> грузоперевозки
-            </a>
-            <div class="slide-descr">
-              <div class="slide-descr__icon"></div>
-              <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+  <main class="content">
+    <section class="slider-section">
+
+      <div class="slider-viewport">
+        <div class="slider" style="left: 0">
+            <div class="slide">
+              <img class="slide__img" src="./images/slide1.png" alt="">
+              <a class="slide__link" href="#">
+                <span class="slide__link_semibold">Контейнерные</span> грузоперевозки
+              </a>
+              <div class="slide-descr">
+                <div class="slide-descr__icon"></div>
+                <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-buttons">
-            <button class="slider-buttons__btn-left"></button>
-            <button class="slider-buttons__btn-right"></button>
-          </div>
-        </div>
-        <div class="slide">
-          <img class="slide-img" src="./images/slide1.png" />
-          <a class="slide__link" href="#">
-            <span class="slide__link_semibold">Контейнерные</span> грузоперевозки
-          </a>
-          <div class="slide-descr">
-            <div class="slide-descr__icon"></div>
-            <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
-          </div>
-        </div>
-        <div class="slider-buttons">
-          <button class="slider-buttons__btn-left"></button>
-          <button class="slider-buttons__btn-right"></button>
+            <div class="slide">
+              <img class="slide__img" src="./images/slide1.png" alt="">
+              <a class="slide__link" href="#">
+                <span class="slide__link_semibold">Контейнерные</span> грузоперевозки 2
+              </a>
+              <div class="slide-descr">
+                <div class="slide-descr__icon"></div>
+                <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slide__img" src="./images/slide1.png" alt="">
+              <a class="slide__link" href="#">
+                <span class="slide__link_semibold">Контейнерные</span> грузоперевозки 3
+              </a>
+              <div class="slide-descr">
+                <div class="slide-descr__icon"></div>
+                <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slide__img" src="./images/slide1.png" alt="">
+              <a class="slide__link" href="#">
+                <span class="slide__link_semibold">Контейнерные</span> грузоперевозки 4
+              </a>
+              <div class="slide-descr">
+                <div class="slide-descr__icon"></div>
+                <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slide__img" src="./images/slide1.png" alt="">
+              <a class="slide__link" href="#">
+                <span class="slide__link_semibold">Контейнерные</span> грузоперевозки 5
+              </a>
+              <div class="slide-descr">
+                <div class="slide-descr__icon"></div>
+                <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="slide">
-        <img class="slide-img" src="./images/slide1.png" />
-        <a class="slide__link" href="#">
-          <span class="slide__link_semibold">Контейнерные</span> грузоперевозки
-        </a>
-        <div class="slide-descr">
-          <div class="slide-descr__icon"></div>
-          <p class="slide-descr__text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
-        </div>
-      </div>
+ 
       <div class="slider-buttons">
         <button class="slider-buttons__btn-left"></button>
         <button class="slider-buttons__btn-right"></button>
       </div>
-    </div>
-</section>
+    </section>
+
+
     <section class="delivery-features">
       <ul class="features-block">
         <li class="feature">
@@ -155,9 +171,6 @@
           </div>
         </li>
       </ul>
-
-
-
     </section>
     <section class="callback">
       <form class="callback-container" action="callback.php">
@@ -224,6 +237,8 @@
   </footer>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
   <script>
     function initMap() {
       var coordinates = {
@@ -236,8 +251,6 @@
     }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaePDregXKVB_5TyQ7kC_fiqqSwBhZ33Q&callback=initMap"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./js/script.js"></script>
 </body>
 
 </html>
