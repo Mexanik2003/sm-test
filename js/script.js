@@ -31,15 +31,60 @@ $(document).ready(function() {
         console.log("---start---");
         
         // создадим пустой объект
-        var $data = {};
+        var data = {};
+        let arr=[];
         // переберём все элементы input, textarea и select формы с id="myForm "
         $('#calc-form').find ('input, textearea, select').each(function() {
-            $data[this.name] = $(this).val();
+            data = {
+                id: this.id,
+                name: this.name,
+                val: $(this).val(),
+                check: $(this).prop('checked')
+            }
+            arr.push(data);
         });
-        console.log($data);
+        console.log(arr);
+        
+        let calc = {};
+        calc.from=$('#from').val();
+        calc.to=$('#to').val();
+
+        // '1' Москва
+        // '2' Санкт-Петербург
+        // '3' Екатеринбург
+        // Москва – Санкт-Петербург	712 км.
+        // Москва – Екатеринбург	1795 км.
+        // Екатеринбург – Санкт-Петербург	2301 км.
+
+        let distanceArr=[
+            [0,     0,      0,     0],
+            [0,     0,      712,   1795],
+            [0,     712,    0,     2301],
+            [0,     1795,   2301,  0]
+        ];
+
+        calc.distance=distanceArr[calc.from][calc.to];
+
+        calc.weight=$('#weight').val();
+        if ($('#get-variant1').is(':checked')) {
+            calc.var = 50;
+        } else {
+            calc.var = 0;
+        }
     
+        if ($('#insurance').is(':checked')) {
+            calc.ins = 5;
+        } else {
+            calc.ins = 0;
+        }
     
-    
+        console.log(calc);
+
+        calc.res =  calc.weight * (calc.distance*0.2 + 50 + calc.ins);
+        calc.res=Math.round(calc.res);
+
+        $('#calc-sum-value__bigtext').text(calc.res.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+        
     
     
     
