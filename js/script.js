@@ -6,7 +6,7 @@ jQuery(function() {
     let viewSlide = 0; // Номер слайда
 
  
-    $(document).on('click','.slider-buttons__btn-right', function() {
+    $('.slider-buttons__btn-right').click(function() {
         if (viewSlide < 4) {
             viewSlide++;
         } else {
@@ -15,7 +15,7 @@ jQuery(function() {
         slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 500})  
     });
 
-    $(document).on('click','.slider-buttons__btn-left', function() {
+    $('.slider-buttons__btn-left').click(function() {
         if (viewSlide > 0) {
             viewSlide--;
         } else {
