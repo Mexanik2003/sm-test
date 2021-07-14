@@ -222,9 +222,8 @@
 
 .calc-inner {
     height: 700px;
-    width: 280px;
+    width: calc(100% - 40px);
     left: 20px;
-    /* right: -20px; */
     position: absolute;
     background-color: thistle;
 }
@@ -253,7 +252,7 @@
     height: 40px;
     line-height: 30px;
     position: relative;
-}}
+}
 
 #slider-weight-value {
     position: absolute;
