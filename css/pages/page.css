@@ -385,6 +385,14 @@
     border: none;
     font-size: 12px;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s all ease;;
+}
+
+.calc-form__submit:hover {
+    background-color: red;
+    color: white;
+
 }
 
 .calc-sum {
@@ -400,11 +408,13 @@
 
 .calc-sum-value {
     margin: 0 0 0 0;
-    transform: translateX(-28px);
+    display: flex;
+    align-items: flex-end;
+    /* transform: translateX(-28px); */
 }
 
 .calc-sum-value__bigtext {
-    display: inline-block;
+    display: block;
     font-size: 58px;
     color: white;
     transform: scaleX(0.7);
@@ -415,8 +425,8 @@
     font-weight: 700;
     font-size: 12px;
     color: white;
-    margin: 0 0 2px 0;
-    transform: translateX(-24px);
+    margin: 0 0 10px 0;
+    /* transform: translateX(-24px); */
 }
 
 
@@ -618,6 +628,14 @@ textarea.callback-form__input {
     border-radius: 30px;
     border: none;
     font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s all ease;;
+}
+
+.callback-form__submit:hover {
+    background-color: white;
+    color: black;
+
 }
 
 .section__title_contacts {

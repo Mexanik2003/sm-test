@@ -28,23 +28,36 @@ $(document).ready(function() {
 
     $("#calc-form-submit").click(function(event) {
         event.preventDefault();
-        console.log("---start---");
-        
-        // создадим пустой объект
-        var data = {};
-        let arr=[];
-        // переберём все элементы input, textarea и select формы с id="myForm "
-        $('#calc-form').find ('input, textearea, select').each(function() {
-            data = {
-                id: this.id,
-                name: this.name,
-                val: $(this).val(),
-                check: $(this).prop('checked')
-            }
-            arr.push(data);
-        });
-        console.log(arr);
-        
+        calculate();
+    });
+
+    $("#from").on('change', function() {
+        calculate();
+
+    })
+
+    $("#to").on('change', function() {
+        calculate();
+
+    })
+
+    $("#get-variant1").on('change', function() {
+        calculate();
+
+    })
+
+    $("#get-variant2").on('change', function() {
+        calculate();
+
+    })
+
+    $("#insurance").on('change', function() {
+        calculate();
+
+    })
+
+
+    function calculate() {
         let calc = {};
         calc.from=$('#from').val();
         calc.to=$('#to').val();
@@ -77,57 +90,11 @@ $(document).ready(function() {
         } else {
             calc.ins = 0;
         }
-    
-        console.log(calc);
-
-        calc.res =  calc.weight * (calc.distance*0.2 + 50 + calc.ins);
+        calc.res =  calc.weight * (calc.distance*0.2 + calc.var + calc.ins);
         calc.res=Math.round(calc.res);
-
+console.log(calc);
         $('#calc-sum-value__bigtext').text(calc.res.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-        
-    
-    
-    
-    
-    
-        console.log("---end---");
-    });
-
-
-
-    jQuery(function() {
-        var tarif = 6,
-            result_outptut = jQuery("#revenue span"),
-            client = 24,
-            revenue = 0,
-            check = 4000,
-            time = 3;
-
-
-        function recount() {
-            revenue = (client+check+time)*tarif;
-            result_outptut.html(revenue + ' руб/мес');
-        };
-        jQuery('#tarif').change(function() {
-            tarif = jQuery('#tarif option:selected').val();
-            recount();
-        });
-        $(document).on("change keyup", "#cargo-weight", function() {
-            client = +$(this).val();
-            $("#slider-range-min").slider("value", client);
-            recount();
-        });
-        $(document).on("change keyup", "#amount2", function() {
-            check = +$(this).val();
-            $("#slider-range-min").slider("value", check);
-            recount();
-        });
-        $(document).on("change keyup", "#amount3", function() {
-            time = +$(this).val();
-            $("#slider-range-min").slider("value", time);
-            recount();
-        });
-    });
+    };
 
 
     $(function(){
@@ -139,16 +106,18 @@ $(document).ready(function() {
             value: 300,
             range: "max",
             create: function() {
+                input.val($(this).slider("value"));
                 handle.text($(this).slider("value") + " кг.");
                 handle.css("left", $("#slider-weight-slider").css("left"));
                 handle.css("transform", "translate(-50%,29px)");
-                input.val($(this).slider("value"));
+                calculate()
             },
             slide: function(event, ui) {
-                handle.text( ui.value  + " кг.");
+                input.val($(this).slider("value"));
+                handle.text( $(this).slider("value")  + " кг.");
                 handle.css("left", $("#slider-weight-slider").css("left"));
                 handle.css("transform", "translate(-50%,29px)");
-                input.val($(this).slider("value"));
+                calculate()
             }
         });
     });
