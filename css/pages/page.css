@@ -40,10 +40,14 @@
     margin: auto 0;
 }
 
+.slider-section {
+    position: relative;
+}
+
 .slider-viewport {
     position: absolute;
     left: 20px;
-    top: 125px;
+    top: -275px;
     width: 280px;
     overflow: hidden;
 } 
@@ -71,7 +75,7 @@
 .slider-buttons {
     position: absolute;
     left: 20px;
-    top: 244px;
+    top: -160px;
 }
 
 .slider-buttons__btn-left {
@@ -225,7 +229,7 @@
     width: calc(100% - 40px);
     left: 20px;
     position: absolute;
-    background-color: thistle;
+    background-color: #f88a11;
 }
 
 .calc-form-container {
@@ -252,6 +256,8 @@
     height: 40px;
     line-height: 30px;
     position: relative;
+    font-size: 12px;
+    padding: 8px 0 0 6px;
 }
 
 #slider-weight-value {
@@ -265,12 +271,155 @@
 	text-align: center;
 	line-height: 24px;
 	outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+#slider-weight {
+    margin: 24px 12px 40px 11px;
+    border-radius: 30px;
+    height: 7px;
+    background-color: red;
+    border-width: 0;
+}
+
+#slider-weight-slider{
+    border-radius: 30px;
+    transform: translateY(-3px);
+    background: white;
 }
 
 .pick-container {
     display: flex;
     flex-direction: column;
+    margin: 0 0 0 0;
 }
+
+.pick-container__radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.pick-container__check {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+  .pick-container__radio-custom {
+    position: relative; 
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #db8425;
+    border: none; 
+    border-radius: 50%; 
+    vertical-align: text-top; 
+    margin-right: 5px;
+}
+
+.pick-container__radio-custom::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: red;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: 0.1s ease-in;
+}
+
+.pick-container__radio:checked + .pick-container__radio-custom::before {
+    transform: translate(-50%, -50%) scale(1);
+}    
+
+  .pick-container__check-custom {
+    position: relative; 
+    display: inline-block; 
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    vertical-align: text-top; 
+    margin-right: 5px;
+}
+
+.pick-container__check-custom::before {
+    content: '-';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../images/checkbox_icon.png");
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: 0.1s ease-in;
+}
+
+.pick-container__check:checked + .pick-container__check-custom::before {
+    transform: translate(-50%, -50%) scale(1);
+}    
+
+.pick-container-radio {
+    margin: 21px 0 0 4px;
+}
+
+.calc-form__submit {
+    margin: 27px 0 0 0px;
+    padding: 0 54px;
+    background-color: white;
+    height: 49px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.calc-sum {
+    margin: 20px 0 0 0;
+}
+
+.calc-sum__text {
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+    margin: 0 0 2px 0;
+}
+
+.calc-sum-value {
+    margin: 0 0 0 0;
+    transform: translateX(-28px);
+}
+
+.calc-sum-value__bigtext {
+    display: inline-block;
+    font-size: 58px;
+    color: white;
+    transform: scaleX(0.7);
+}
+
+.calc-sum-value__text {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    margin: 0 0 2px 0;
+    transform: translateX(-24px);
+}
+
+
 
 .news {
     background-image: url("../../images/news_bg.png");

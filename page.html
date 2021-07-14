@@ -136,40 +136,57 @@
       <div class="calc-inner">
         <div class="calc-form-container">
           <h2 class="calc__title">Расчет доставки</h2>
-          <form action="handler.php">
+          <form id="calc-form">
             <p class="formfield__title">Откуда</p>
-            <select id="from" class="formfield__select">
+            <select id="from" name="from" class="formfield__select">
               <option value='1' selected>Москва</option>
               <option value='2'>Санкт-Петербург</option>
               <option value='3'>Екатеринбург</option>
             </select>
             <p class="formfield__title">Куда</p>
-            <select id="to" class="formfield__select">
+            <select id="to" name="to" class="formfield__select">
               <option value='1'>Москва</option>
               <option value='2' selected>Санкт-Петербург</option>
               <option value='3'>Екатеринбург</option>
             </select>
             <p class="formfield__title">Вес груза</p>
-            <div id="slider-weight">
-              <div id="slider-weight-slider" class="ui-slider-handle"></div>
+            <div id="slider-weight" class="slider-weight">
+              <div id="slider-weight-slider" class="slider-weight-slider ui-slider-handle"></div>
               <div id="slider-weight-value"></div>
-              <input type="text" id="weight" readonly style="visibility: hidden;">
+              <input type="text" id="weight" name="weight" readonly style="visibility: hidden;">
             </div>
             <div class="pick-container">
-              <label class="formfield__title">
-                <input type="radio" name="get-variant" value="1">
-                Забрать курьером
-              </label>
-              <label class="formfield__title">
-                <input type="radio" name="get-variant" value="2">
-                Заберу сам
-              </label>
-              <label class="formfield__title">
-                <input type="checkbox" name="insurance" value="2">
-                Заберу сам
-              </label>
+              <div class="pick-container-radio">
+                <label  for="get-variant1" class="formfield__title">
+                  <input class="pick-container__radio" type="radio" id="get-variant1"  name="get-variant" checked>
+                  <span class="pick-container__radio-custom"></span>  
+                  Забрать курьером
+                </label>
+              </div>
+              <div class="pick-container-radio">
+                <label  for="get-variant2" class="formfield__title">
+                  <input class="pick-container__radio" type="radio" id="get-variant2" name="get-variant">
+                  <span class="pick-container__radio-custom"></span>  
+                  Заберу сам
+                </label>
+              </div>
+              <div class="pick-container-radio">
+                <label for="insurance" class="formfield__title">
+                  <input class="pick-container__check" type="checkbox" id="insurance" name="insurance">
+                  <span class="pick-container__check-custom"></span>  
+                  Заберу сам
+                </label>
+              </div>
             </div>
+            <button id="calc-form-submit" class="calc-form__submit">Рассчитать стоимость</button>
           </form> 
+          <div class="calc-sum">
+            <p class="calc-sum__text">ИТОГО:</p>
+            <div class="calc-sum-value">
+              <span class="calc-sum-value__bigtext">12 000</span>
+              <span class="calc-sum-value__text"> руб.</span>
+            </div>
+          </div>
         </div>
       </div>
 

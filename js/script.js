@@ -1,4 +1,4 @@
-jQuery(function() {
+$(document).ready(function() {
 
 
     let viewport = $(".slider-viewport").width(); // Ширина видимой части
@@ -23,6 +23,31 @@ jQuery(function() {
         }
         slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 500})  
     });
+
+
+
+    $("#calc-form-submit").click(function(event) {
+        event.preventDefault();
+        console.log("---start---");
+        
+        // создадим пустой объект
+        var $data = {};
+        // переберём все элементы input, textarea и select формы с id="myForm "
+        $('#calc-form').find ('input, textearea, select').each(function() {
+            $data[this.name] = $(this).val();
+        });
+        console.log($data);
+    
+    
+    
+    
+    
+    
+    
+    
+        console.log("---end---");
+    });
+
 
 
     jQuery(function() {
@@ -59,7 +84,6 @@ jQuery(function() {
         });
     });
 
-});
 
     $(function(){
         var handle = $("#slider-weight-value");
@@ -68,17 +92,19 @@ jQuery(function() {
             min: 1,
             max: 500,
             value: 300,
+            range: "max",
             create: function() {
                 handle.text($(this).slider("value") + " кг.");
                 handle.css("left", $("#slider-weight-slider").css("left"));
-                handle.css("transform", "translate(-50%,30px)");
+                handle.css("transform", "translate(-50%,29px)");
                 input.val($(this).slider("value"));
             },
             slide: function(event, ui) {
                 handle.text( ui.value  + " кг.");
                 handle.css("left", $("#slider-weight-slider").css("left"));
-                handle.css("transform", "translate(-50%,30px)");
+                handle.css("transform", "translate(-50%,29px)");
                 input.val($(this).slider("value"));
             }
         });
     });
+});
