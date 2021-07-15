@@ -256,7 +256,6 @@
         <button class="contacts__callbtn">Заказать звонок</button>
       </div>
       <div class="contacts-map" id="map"></div>
-      <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1Eeg8iAT6pDTj7sywGVJJugKR11cwNObm&hl=ru" width="320" height="240"></iframe> -->
     </section>
       
   </main>
@@ -285,19 +284,12 @@
 
   </footer>
 
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaePDregXKVB_5TyQ7kC_fiqqSwBhZ33Q&callback=initMap"
+      async
+    ></script>
 
-  <!-- <script>
-    function initMap() {
-      var coordinates = {
-        lat: 47.212325, 
-        lng: 38.933663
-      }      
-      let map = new google.maps.Map(document.getElementById('map'), {
-          center: coordinates
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaePDregXKVB_5TyQ7kC_fiqqSwBhZ33Q&callback=initMap"></script> -->
 </body>
 
 </html>

@@ -92,7 +92,6 @@ $(document).ready(function() {
         }
         calc.res =  calc.weight * (calc.distance*0.2 + calc.var + calc.ins);
         calc.res=Math.round(calc.res);
-console.log(calc);
         $('#calc-sum-value__bigtext').text(calc.res.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
     };
 
@@ -122,3 +121,19 @@ console.log(calc);
         });
     });
 });
+
+function initMap() {
+    const location = { lat: 56.8435859, lng: 60.5941851};
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: location,
+    });
+
+    const marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: "Екатеринбург",
+    });
+    marker.setIcon('../images/map_icon.png');
+}
