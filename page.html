@@ -9,6 +9,7 @@
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./js/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.maskedinput.min.js"></script>
 </head>
 <body class="b-page">
   <div class="page">
@@ -222,15 +223,21 @@
       </ul>
     </section>
     <section class="callback">
-      <form class="callback-container" action="callback.php">
+      <form id="callback-form" class="callback-container" action="#">
         <h2 class="section__title section__title_margin">Свяжитесь с&nbsp;нами</h2>
-        <input class="callback-form__input" type="text" placeholder="Ваше имя"   id="name">
-        <input class="callback-form__input" type="text" placeholder="Телефон"    id="phone">
-        <input class="callback-form__input" type="text" placeholder="E-mail"     id="email">
-        <textarea class="callback-form__input" placeholder="Сообщение" id="text"></textarea>
+        <input id="callback-name" class="callback-form__input" type="text" placeholder="Ваше имя *"   id="name">
+        <p id="callback-name-error" class="callback-form__error">Обязательное поле</p>
+        <input id="callback-phone" class="callback-form__input" type="text" placeholder="Телефон *"    id="phone">
+        <p id="callback-phone-error" class="callback-form__error">Обязательное поле</p>
+        <input id="callback-email" class="callback-form__input" type="text" placeholder="E-mail"     id="email">
+        <p id="callback-email-error" class="callback-form__error">Введите корректный email</p>
+        <textarea id="callback-text" class="callback-form__input" placeholder="Сообщение" id="text"></textarea>
+        <p id="callback-text-error" class="callback-form__error">Обязательное поле</p>
         <button class="callback-form__submit" type="submit">Отправить</button>
       </form>
     </section>
+
+    
     <section class="contacts">
       <div class="contacts-container">
         <h2 class="section__title section__title_contacts">Контакты</h2>
@@ -253,7 +260,7 @@
             example@mail.com
           </p>
         </div>
-        <button class="contacts__callbtn">Заказать звонок</button>
+        <button id="contacts-callbtn" class="contacts__callbtn">Заказать звонок</button>
       </div>
       <div class="contacts-map" id="map"></div>
     </section>
@@ -284,8 +291,19 @@
 
   </footer>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
+  <div id="popup-form-container" class="popup-form-container">
+    <form id="popup-form" class="popup-form" action="#">
+      <button class="popup__close-button" type="reset" aria-label="Закрыть окно"></button>
+      <h2 class="section__title section__title_margin">Заказать звонок</h2>
+      <input id="popup-name" class="callback-form__input" type="text" placeholder="Ваше имя *"   id="name">
+      <p id="popup-name-error" class="callback-form__error">Обязательное поле</p>
+      <input id="popup-phone" class="callback-form__input" type="text" placeholder="Телефон *"    id="phone">
+      <p id="popup-phone-error" class="callback-form__error">Обязательное поле</p>
+      <button class="callback-form__submit" type="submit">Заказать</button>
+    </form>
+  </div>
+
+  <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaePDregXKVB_5TyQ7kC_fiqqSwBhZ33Q&callback=initMap"
       async
     ></script>

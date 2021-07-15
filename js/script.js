@@ -24,6 +24,11 @@ $(document).ready(function() {
         slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 500})  
     });
 
+    $("#contacts-callbtn").click(function(event) {
+        event.preventDefault();
+        $("#popup-form-container").css('visibility','inherit');;
+    });
+
 
 
     $("#calc-form-submit").click(function(event) {
@@ -120,6 +125,60 @@ $(document).ready(function() {
             }
         });
     });
+
+    $('#callback-form').submit(function(e) {
+        e.preventDefault();
+        const form={};
+        form.name = $('#callback-name').val();
+        form.phone = $('#callback-phone').val();
+        form.email = $('#callback-email').val();
+        form.text = $('#callback-text').val();
+
+        if (form.name.length < 1) {
+            $('#callback-name-error').css('visibility','initial');
+            $('#callback-name').addClass('callback-form__input_highlight')
+        } else {
+            $('#callback-name-error').css('visibility','hidden');
+            $('#callback-name').removeClass('callback-form__input_highlight')
+        }
+
+        var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/;
+        var validEmail = regEx.test(form.email);
+        if (form.email.length < 7 || !validEmail) {
+            $('#callback-email-error').css('visibility','initial');
+            $('#callback-email').addClass('callback-form__input_highlight')
+        } else {
+            $('#callback-email-error').css('visibility','hidden');
+            $('#callback-email').removeClass('callback-form__input_highlight')
+        }
+    });
+    
+    $('#popup-form').submit(function(e) {
+        e.preventDefault();
+        const form={};
+        form.name = $('#popup-name').val();
+        form.phone = $('#popup-phone').val();
+
+        if (form.name.length < 1) {
+            $('#popup-name-error').css('visibility','initial');
+            $('#popup-name').addClass('callback-form__input_highlight')
+        } else {
+            $('#popup-name-error').css('visibility','hidden');
+            $('#popup-name').removeClass('callback-form__input_highlight')
+        }
+    });
+    
+    $("#popup-phone").mask("+7 (999) 999-99-99");
+
+    $(document).click( function(e){
+        if ( $(e.target).closest('#popup-form').length ) {
+            // клик внутри элемента 
+            return;
+        }
+        // клик снаружи элемента 
+        $('#popup-form-container').fadeOut();
+    });
+
 });
 
 function initMap() {
