@@ -5,17 +5,24 @@ $(document).ready(function() {
     let slider = $("div.slider"); // Весь слайдер
     let viewSlide = 0; // Номер слайда
 
- 
-    $('.slider-buttons__btn-right').click(function() {
+    const cycle = setInterval(slideToRight, 3000);
+
+    function slideToRight() {
         if (viewSlide < 4) {
             viewSlide++;
         } else {
             viewSlide = 0;
         }
         slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 500})  
+    }
+
+    $('.slider-buttons__btn-right').click(function() {
+        clearInterval(cycle); 
+        slideToRight();
     });
 
     $('.slider-buttons__btn-left').click(function() {
+        clearInterval(cycle); 
         if (viewSlide > 0) {
             viewSlide--;
         } else {
@@ -24,10 +31,6 @@ $(document).ready(function() {
         slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 500})  
     });
 
-    $("#contacts-callbtn").click(function(event) {
-        event.preventDefault();
-        $("#popup-form-container").css('visibility','inherit');;
-    });
 
 
 
@@ -107,7 +110,7 @@ $(document).ready(function() {
         $("#slider-weight").slider({
             min: 1,
             max: 500,
-            value: 300,
+            value: 10,
             range: "max",
             create: function() {
                 input.val($(this).slider("value"));
@@ -133,24 +136,52 @@ $(document).ready(function() {
         form.phone = $('#callback-phone').val();
         form.email = $('#callback-email').val();
         form.text = $('#callback-text').val();
+        let validationFlag=true;
+
 
         if (form.name.length < 1) {
             $('#callback-name-error').css('visibility','initial');
             $('#callback-name').addClass('callback-form__input_highlight')
+            validationFlag=false;
         } else {
             $('#callback-name-error').css('visibility','hidden');
             $('#callback-name').removeClass('callback-form__input_highlight')
         }
 
-        var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/;
+        var regEx = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
         var validEmail = regEx.test(form.email);
-        if (form.email.length < 7 || !validEmail) {
+        if (form.email.length < 6 || !validEmail) {
             $('#callback-email-error').css('visibility','initial');
             $('#callback-email').addClass('callback-form__input_highlight')
+            validationFlag=false;
         } else {
             $('#callback-email-error').css('visibility','hidden');
             $('#callback-email').removeClass('callback-form__input_highlight')
         }
+
+        if (form.phone.length < 10) {
+            $('#callback-phone-error').css('visibility','initial');
+            $('#callback-phone').addClass('callback-form__input_highlight')
+            validationFlag=false;
+        } else {
+            $('#callback-phone-error').css('visibility','hidden');
+            $('#callback-phone').removeClass('callback-form__input_highlight')
+        }
+
+        if (form.text.length < 1) {
+            $('#callback-text-error').css('visibility','initial');
+            $('#callback-text').addClass('callback-form__input_highlight')
+            validationFlag=false;
+        } else {
+            $('#callback-text-error').css('visibility','hidden');
+            $('#callback-text').removeClass('callback-form__input_highlight')
+        }
+
+        if (validationFlag) {
+            // отправляем куда-нибудь запрос;
+        };
+
+
     });
     
     $('#popup-form').submit(function(e) {
@@ -158,26 +189,82 @@ $(document).ready(function() {
         const form={};
         form.name = $('#popup-name').val();
         form.phone = $('#popup-phone').val();
+        let validationFlag=true;
 
         if (form.name.length < 1) {
             $('#popup-name-error').css('visibility','initial');
             $('#popup-name').addClass('callback-form__input_highlight')
+            validationFlag=false;
         } else {
             $('#popup-name-error').css('visibility','hidden');
             $('#popup-name').removeClass('callback-form__input_highlight')
         }
+
+        if (form.phone.length < 10) {
+            $('#popup-phone-error').css('visibility','initial');
+            $('#popup-phone').addClass('callback-form__input_highlight')
+            validationFlag=false;
+        } else {
+            $('#popup-phone-error').css('visibility','hidden');
+            $('#popup-phone').removeClass('callback-form__input_highlight')
+        }
+        if (validationFlag) {
+            closePopupForm();
+            // + отправляем куда-нибудь запрос;
+        }
+
     });
     
     $("#popup-phone").mask("+7 (999) 999-99-99");
+    $("#callback-phone").mask("+7 (999) 999-99-99");
 
-    $(document).click( function(e){
-        if ( $(e.target).closest('#popup-form').length ) {
-            // клик внутри элемента 
-            return;
-        }
-        // клик снаружи элемента 
-        $('#popup-form-container').fadeOut();
+    $("#contacts-callbtn").click(function(event) {
+        event.preventDefault();
+        $("#popup-form-container").addClass('popup-form-container_opened');
     });
+
+    $("#popup__close-button").click(closePopupForm);
+    $("#popup-form-container").click(closePopupFormByOver);
+    
+    function closePopupForm() {
+        $('#popup-form-container').removeClass('popup-form-container_opened');
+        $('#popup-name-error').css('visibility','hidden');
+        $('#popup-phone-error').css('visibility','hidden');
+    }
+
+    function closePopupFormByOver(evt) {
+        if(evt.target.classList.contains('popup-form-container')){
+            closePopupForm();
+        }
+    }
+
+
+    let viewportNews = $(".news-viewport").width(); // Ширина видимой части
+    let sliderNews = $("div.news-container"); // Весь слайдер
+    let viewSlideNews = 0; // Номер слайда
+
+
+    $('.newslist__btn-right').click(function() {
+        if (viewSlideNews < 2) {
+            viewSlideNews++;
+        } else {
+            viewSlideNews = 0;
+        }
+        sliderNews.animate({'left': -viewSlideNews * viewportNews + "px"}, {'duration': 500})  
+    });
+
+    $('.newslist__btn-left').click(function() {
+        clearInterval(cycle); 
+        if (viewSlideNews > 0) {
+            viewSlideNews--;
+        } else {
+            viewSlideNews = 2;
+        }
+        sliderNews.animate({'left': -viewSlideNews * viewportNews + "px"}, {'duration': 500})  
+    });
+
+
+
 
 });
 

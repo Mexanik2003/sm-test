@@ -31,7 +31,7 @@
     <section class="slider-section">
 
       <div class="slider-viewport">
-        <div class="slider" style="left: 0">
+        <div class="slider">
             <div class="slide">
               <img class="slide__img" src="./images/slide1.png" alt="">
               <a class="slide__link" href="#">
@@ -140,14 +140,14 @@
           <form id="calc-form">
             <p class="formfield__title">Откуда</p>
             <select id="from" name="from" class="formfield__select">
-              <option value='1' selected>Москва</option>
+              <option value='1'>Москва</option>
               <option value='2'>Санкт-Петербург</option>
-              <option value='3'>Екатеринбург</option>
+              <option value='3' selected>Екатеринбург</option>
             </select>
             <p class="formfield__title">Куда</p>
             <select id="to" name="to" class="formfield__select">
-              <option value='1'>Москва</option>
-              <option value='2' selected>Санкт-Петербург</option>
+              <option value='1' selected>Москва</option>
+              <option value='2'>Санкт-Петербург</option>
               <option value='3'>Екатеринбург</option>
             </select>
             <p class="formfield__title">Вес груза</p>
@@ -173,7 +173,7 @@
               </div>
               <div class="pick-container-radio">
                 <label for="insurance" class="formfield__title">
-                  <input class="pick-container__check" type="checkbox" id="insurance" name="insurance">
+                  <input class="pick-container__check" type="checkbox" id="insurance" name="insurance" checked>
                   <span class="pick-container__check-custom"></span>  
                   Страхование груза
                 </label>
@@ -197,30 +197,65 @@
       <div class="news-header">
           <h2 class="section__title" href="#">Новости</h2>
           <div class="news-list-controls">
-            <button class="newslist__btn-left"></button>
-            <button class="newslist__btn-right"></button>
+            <button id="newslist__btn-left" class="newslist__btn-left"></button>
+            <button id="newslist__btn-right" class="newslist__btn-right"></button>
           </div>
 
       </div>
       <a class="allnews-link" href="#">Все новости</a>
-      <ul class="news-container">
-        <li class="news-item">
-          <img class="newsitem__img" src="images/newsitem1_img.png" />
-          <div class="newsitem-content">
-            <div class="newsitem-content-date">
-              <p class="newsitem-content__num">10</p>
-              <p class="newsitem-content__month">апреля</p>
-            </div>
-            <div class="newsitem-content-text">
-              <p class="newsitem-content__title">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
-              <div class="newsitem-content-more-container">
-                <img class="newsitem-content-more__more-icon" src="./images/more_link_icon.png"/>
-                <a class="newsitem-content-more__link">Подробнее</a>
+      <div class="news-viewport">
+        <div class="news-container">
+          <div class="news-item">
+            <img class="newsitem__img" src="images/newsitem1_img.png" />
+            <div class="newsitem-content">
+              <div class="newsitem-content-date">
+                <p class="newsitem-content__num">11</p>
+                <p class="newsitem-content__month">апреля</p>
+              </div>
+              <div class="newsitem-content-text">
+                <p class="newsitem-content__title">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
+                <div class="newsitem-content-more-container">
+                  <img class="newsitem-content-more__more-icon" src="./images/more_link_icon.png"/>
+                  <a class="newsitem-content-more__link">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
+          <div class="news-item">
+            <img class="newsitem__img" src="images/newsitem1_img.png" />
+            <div class="newsitem-content">
+              <div class="newsitem-content-date">
+                <p class="newsitem-content__num">22</p>
+                <p class="newsitem-content__month">апреля</p>
+              </div>
+              <div class="newsitem-content-text">
+                <p class="newsitem-content__title">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
+                <div class="newsitem-content-more-container">
+                  <img class="newsitem-content-more__more-icon" src="./images/more_link_icon.png"/>
+                  <a class="newsitem-content-more__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-item">
+            <img class="newsitem__img" src="images/newsitem1_img.png" />
+            <div class="newsitem-content">
+              <div class="newsitem-content-date">
+                <p class="newsitem-content__num">33</p>
+                <p class="newsitem-content__month">апреля</p>
+              </div>
+              <div class="newsitem-content-text">
+                <p class="newsitem-content__title">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
+                <div class="newsitem-content-more-container">
+                  <img class="newsitem-content-more__more-icon" src="./images/more_link_icon.png"/>
+                  <a class="newsitem-content-more__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
     <section class="callback">
       <form id="callback-form" class="callback-container" action="#">
@@ -229,9 +264,9 @@
         <p id="callback-name-error" class="callback-form__error">Обязательное поле</p>
         <input id="callback-phone" class="callback-form__input" type="text" placeholder="Телефон *"    id="phone">
         <p id="callback-phone-error" class="callback-form__error">Обязательное поле</p>
-        <input id="callback-email" class="callback-form__input" type="text" placeholder="E-mail"     id="email">
+        <input id="callback-email" class="callback-form__input" type="text" placeholder="E-mail *"     id="email">
         <p id="callback-email-error" class="callback-form__error">Введите корректный email</p>
-        <textarea id="callback-text" class="callback-form__input" placeholder="Сообщение" id="text"></textarea>
+        <textarea id="callback-text" class="callback-form__input" placeholder="Сообщение *" id="text"></textarea>
         <p id="callback-text-error" class="callback-form__error">Обязательное поле</p>
         <button class="callback-form__submit" type="submit">Отправить</button>
       </form>
@@ -293,7 +328,7 @@
 
   <div id="popup-form-container" class="popup-form-container">
     <form id="popup-form" class="popup-form" action="#">
-      <button class="popup__close-button" type="reset" aria-label="Закрыть окно"></button>
+      <button id="popup__close-button" class="popup__close-button" type="reset"></button>
       <h2 class="section__title section__title_margin">Заказать звонок</h2>
       <input id="popup-name" class="callback-form__input" type="text" placeholder="Ваше имя *"   id="name">
       <p id="popup-name-error" class="callback-form__error">Обязательное поле</p>
