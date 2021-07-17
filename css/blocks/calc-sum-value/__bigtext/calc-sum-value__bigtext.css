@@ -1,0 +1,6 @@
+.calc-sum-value__bigtext {
+    display: block;
+    font-size: 58px;
+    color: white;
+    transform: scaleX(0.7);
+}

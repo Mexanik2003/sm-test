@@ -1,0 +1,10 @@
+.allnews-link {
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    padding: 0 0 0 18px;
+    transition: 0.3 all ease;
+}
+.allnews-link:hover {
+    text-decoration: none;
+}

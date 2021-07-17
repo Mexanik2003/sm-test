@@ -1,0 +1,11 @@
+.pick-container__radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.pick-container__radio:checked + .pick-container__radio-custom::before {
+    transform: translate(-50%, -50%) scale(1);
+}    

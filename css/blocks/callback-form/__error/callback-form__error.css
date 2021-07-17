@@ -1,0 +1,12 @@
+.callback-form__error {
+    margin: 0 0 9px 0;
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+textarea.callback-form__input {
+    padding-top: 15px;
+    height: 122px;
+}
+

@@ -1,0 +1,8 @@
+.popup-form {
+    position: relative;
+    background-color: #272b31;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}

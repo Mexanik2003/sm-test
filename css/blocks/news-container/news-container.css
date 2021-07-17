@@ -1,0 +1,6 @@
+.news-container {
+    width: calc(100% * 3);
+    padding: 0;
+    display: flex;
+    position: relative;
+}

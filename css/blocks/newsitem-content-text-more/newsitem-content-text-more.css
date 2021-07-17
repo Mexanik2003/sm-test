@@ -1,0 +1,8 @@
+.newsitem-content-text-more {
+    display: inline-flex;
+    margin: 3px auto 0 0;
+    padding: 5px 9px;
+    background-color: white;
+    vertical-align: middle;
+    text-decoration: none;
+}

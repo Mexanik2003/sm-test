@@ -1,0 +1,12 @@
+.pick-container__check {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.pick-container__check:checked + .pick-container__check-custom::before {
+    transform: translate(-50%, -50%) scale(1);
+}    
+

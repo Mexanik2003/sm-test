@@ -1,0 +1,7 @@
+.calc-sum-value__text {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    margin: 0 0 10px 0;
+}

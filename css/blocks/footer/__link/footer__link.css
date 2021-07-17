@@ -1,0 +1,8 @@
+.footer__link {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 4px 0;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}

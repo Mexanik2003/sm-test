@@ -1,0 +1,24 @@
+.pick-container__check-custom {
+    position: relative; 
+    display: inline-block; 
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    vertical-align: text-top; 
+    margin-right: 5px;
+}
+
+.pick-container__check-custom::before {
+    content: '-';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../../../images/checkbox_icon.png");
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: 0.1s ease-in;
+}

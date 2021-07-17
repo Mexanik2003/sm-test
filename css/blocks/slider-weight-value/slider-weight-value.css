@@ -1,0 +1,14 @@
+#slider-weight-value {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+	width: 80px;
+	height: 24px;
+	top: 50%;
+	margin-top: -14px;
+	text-align: center;
+	line-height: 24px;
+	outline: none;
+    color: white;
+    font-size: 16px;
+}

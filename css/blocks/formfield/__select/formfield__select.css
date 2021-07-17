@@ -1,0 +1,9 @@
+.formfield__select {
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    line-height: 30px;
+    position: relative;
+    font-size: 12px;
+    padding: 8px 0 0 6px;
+}

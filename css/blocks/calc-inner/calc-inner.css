@@ -1,0 +1,7 @@
+.calc-inner {
+    height: 700px;
+    width: calc(100% - 40px);
+    left: 20px;
+    position: absolute;
+    background-color: #f88a11;
+}

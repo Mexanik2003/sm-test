@@ -1,0 +1,16 @@
+.callback-form__submit {
+    color: white;
+    background-color: #f9a03e;
+    height: 49px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s all ease;;
+}
+
+.callback-form__submit:hover {
+    background-color: white;
+    color: black;
+
+}

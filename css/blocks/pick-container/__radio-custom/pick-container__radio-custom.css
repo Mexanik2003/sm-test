@@ -1,0 +1,27 @@
+.pick-container__radio-custom {
+    position: relative; 
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #db8425;
+    border: none; 
+    border-radius: 50%; 
+    vertical-align: text-top; 
+    margin-right: 5px;
+}
+
+.pick-container__radio-custom::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: red;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: 0.1s ease-in;
+}

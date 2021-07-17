@@ -1,0 +1,18 @@
+.calc-form__submit {
+    margin: 27px 0 0 0px;
+    padding: 0 54px;
+    background-color: white;
+    height: 49px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s all ease;;
+}
+
+.calc-form__submit:hover {
+    background-color: red;
+    color: white;
+
+}

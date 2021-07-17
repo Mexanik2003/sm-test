@@ -4,11 +4,16 @@
 
 @import url(../blocks/b-page/b-page.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/section/__title/section__title.css);
+@import url(../blocks/section/__title/_margin/section__title_margin.css);
+@import url(../blocks/section/__title/_contacts/section__title_contacts.css);
+
 @import url(../blocks/header/header.css);
 @import url(../blocks/header-container/header-container.css);
 @import url(../blocks/header-right/header-right.css);
 @import url(../blocks/header-right/__menu-icon/header-right__menu-icon.css);
 @import url(../blocks/logo/logo.css);
+@import url(../blocks/logo/_footer/logo_footer.css);
 
 @import url(../blocks/slider-section/slider-section.css);
 @import url(../blocks/slider-viewport/slider-viewport.css);
@@ -34,594 +39,79 @@
 @import url(../blocks/description/__title/description__title.css);
 @import url(../blocks/description/__text/description__text.css);
 
+@import url(../blocks/calc/calc.css);
+@import url(../blocks/calc-inner/calc-inner.css);
+@import url(../blocks/calc-form-container/calc-form-container.css);
+@import url(../blocks/calc/__title/calc__title.css);
+@import url(../blocks/formfield/__title/formfield__title.css);
+@import url(../blocks/formfield/__select/formfield__select.css);
+@import url(../blocks/slider-weight/slider-weight.css);
+@import url(../blocks/slider-weight-value/slider-weight-value.css);
+@import url(../blocks/slider-weight-slider/slider-weight-slider.css);
+@import url(../blocks/pick-container/pick-container.css);
+@import url(../blocks/pick-container/__radio/pick-container__radio.css);
+@import url(../blocks/pick-container/__check/pick-container__check.css);
+@import url(../blocks/pick-container/__radio-custom/pick-container__radio-custom.css);
+@import url(../blocks/pick-container/__check-custom/pick-container__check-custom.css);
+@import url(../blocks/pick-container-radio/pick-container-radio.css);
+@import url(../blocks/calc-form/__submit/calc-form__submit.css);
+@import url(../blocks/calc-sum/calc-sum.css);
+@import url(../blocks/calc-sum/__text/calc-sum__text.css);
+@import url(../blocks/calc-sum-value/calc-sum-value.css);
+@import url(../blocks/calc-sum-value/__bigtext/calc-sum-value__bigtext.css);
+@import url(../blocks/calc-sum-value/__text/calc-sum-value__text.css);
+
+@import url(../blocks/news/news.css);
+@import url(../blocks/news-header/news-header.css);
+@import url(../blocks/news-list-controls/news-list-controls.css);
+@import url(../blocks/newslist/__btn-left/newslist__btn-left.css);
+@import url(../blocks/newslist/__btn-right/newslist__btn-right.css);
+@import url(../blocks/allnews-link/allnews-link.css);
+@import url(../blocks/news-viewport/news-viewport.css);
+@import url(../blocks/news-container/news-container.css);
+@import url(../blocks/newsitem/newsitem.css);
+@import url(../blocks/newsitem/__img/newsitem__img.css);
+@import url(../blocks/newsitem-content/newsitem-content.css);
+@import url(../blocks/newsitem-content-date/newsitem-content-date.css);
+@import url(../blocks/newsitem-content-date/__num/newsitem-content-date__num.css);
+@import url(../blocks/newsitem-content-date/__month/newsitem-content-date__month.css);
+@import url(../blocks/newsitem-content-text/newsitem-content-text.css);
+@import url(../blocks/newsitem-content-text/__title/newsitem-content-text__title.css);
+@import url(../blocks/newsitem-content-text-more/newsitem-content-text-more.css);
+@import url(../blocks/newsitem-content-text-more/__icon/newsitem-content-text-more__icon.css);
+@import url(../blocks/newsitem-content-text-more/__text/newsitem-content-text-more__text.css);
+
+@import url(../blocks/callback/callback.css);
+@import url(../blocks/callback-container/callback-container.css);
+@import url(../blocks/callback-form/__input/callback-form__input.css);
+@import url(../blocks/callback-form/__input/_highlight/callback-form__input_highlight.css);
+@import url(../blocks/callback-form/__error/callback-form__error.css);
+@import url(../blocks/callback-form/__submit/callback-form__submit.css);
+
+@import url(../blocks/popup-form/popup-form.css);
+@import url(../blocks/popup-form-container/popup-form-container.css);
+@import url(../blocks/popup-form-container/_opened/popup-form-container_opened.css);
+@import url(../blocks/popup-form/__close-button/popup-form__close-button.css);
+
+@import url(../blocks/contacts/contacts.css);
+@import url(../blocks/contacts/__callbtn/contacts__callbtn.css);
+@import url(../blocks/contacts/__map/contacts__map.css);
+@import url(../blocks/contacts-container/contacts-container.css);
+@import url(../blocks/contacts-block/contacts-block.css);
+@import url(../blocks/contacts-block/__title/contacts-block__title.css);
+@import url(../blocks/contacts-block/__text/contacts-block__text.css);
+@import url(../blocks/contacts-block/__phone/contacts-block__phone.css);
+@import url(../blocks/contacts-block/__email/contacts-block__email.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer-container/footer-container.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/__link/footer__link.css);
 
 
 
 
-.calc {
-    background-color: #2b2933;
-    margin: 0;
-    padding: 50px 0 580px 0;
 
-}
 
-.calc-inner {
-    height: 700px;
-    width: calc(100% - 40px);
-    left: 20px;
-    position: absolute;
-    background-color: #f88a11;
-}
-
-.calc-form-container {
-    padding: 30px 18px;
-}
-
-.calc__title {
-    font-weight: 900;
-    color: white;
-    font-size: 36px;
-
-}
-
-.formfield__title {
-    font-weight: 800;
-    color: white;
-    font-size: 11px;
-    margin: 23px 0 8px 0;
-}
-
-.formfield__select {
-    display: inline-block;
-    width: 240px;
-    height: 40px;
-    line-height: 30px;
-    position: relative;
-    font-size: 12px;
-    padding: 8px 0 0 6px;
-}
-
-#slider-weight-value {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-	width: 80px;
-	height: 24px;
-	top: 50%;
-	margin-top: -14px;
-	text-align: center;
-	line-height: 24px;
-	outline: none;
-    color: white;
-    font-size: 16px;
-}
-
-#slider-weight {
-    margin: 24px 12px 40px 11px;
-    border-radius: 30px;
-    height: 7px;
-    background-color: red;
-    border-width: 0;
-}
-
-#slider-weight-slider{
-    border-radius: 30px;
-    transform: translateY(-3px);
-    background: white;
-}
-
-.pick-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 0;
-}
-
-.pick-container__radio {
-    width: 0;
-    height: 0;
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-.pick-container__check {
-    width: 0;
-    height: 0;
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-  .pick-container__radio-custom {
-    position: relative; 
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: #db8425;
-    border: none; 
-    border-radius: 50%; 
-    vertical-align: text-top; 
-    margin-right: 5px;
-}
-
-.pick-container__radio-custom::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: red;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-
-    transition: 0.1s ease-in;
-}
-
-.pick-container__radio:checked + .pick-container__radio-custom::before {
-    transform: translate(-50%, -50%) scale(1);
-}    
-
-  .pick-container__check-custom {
-    position: relative; 
-    display: inline-block; 
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    vertical-align: text-top; 
-    margin-right: 5px;
-}
-
-.pick-container__check-custom::before {
-    content: '-';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("../../images/checkbox_icon.png");
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-
-    transition: 0.1s ease-in;
-}
-
-.pick-container__check:checked + .pick-container__check-custom::before {
-    transform: translate(-50%, -50%) scale(1);
-}    
-
-.pick-container-radio {
-    margin: 21px 0 0 4px;
-}
-
-.calc-form__submit {
-    margin: 27px 0 0 0px;
-    padding: 0 54px;
-    background-color: white;
-    height: 49px;
-    border-radius: 30px;
-    border: none;
-    font-size: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s all ease;;
-}
-
-.calc-form__submit:hover {
-    background-color: red;
-    color: white;
-
-}
-
-.calc-sum {
-    margin: 20px 0 0 0;
-}
-
-.calc-sum__text {
-    font-weight: 700;
-    font-size: 10px;
-    color: white;
-    margin: 0 0 2px 0;
-}
-
-.calc-sum-value {
-    margin: 0 0 0 0;
-    display: flex;
-    align-items: flex-end;
-    /* transform: translateX(-28px); */
-}
-
-.calc-sum-value__bigtext {
-    display: block;
-    font-size: 58px;
-    color: white;
-    transform: scaleX(0.7);
-}
-
-.calc-sum-value__text {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
-    color: white;
-    margin: 0 0 10px 0;
-    /* transform: translateX(-24px); */
-}
-
-
-
-.news {
-    background-image: url("../../images/news_bg.png");
-    width: 100%;
-    padding-bottom: 50px;
-}
-
-.news-header {
-    padding: 165px 15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__title {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 38px;
-    color: white;
-    text-decoration: none;
-}
-
-.news-list-controls {
-    display: flex;
-    align-items:center;
-}
-
-.newslist__btn-left {
-    margin: 0 8px;
-    width: 32px;
-    height: 32px;
-    background-image: url("../../images/arrow_left_white.png");
-    background-size: 32px 32px;
-    border: 0;
-    border-radius: 30px;
-    transition: 0.3s all ease;
-}
-
-.newslist__btn-left:hover {
-    cursor: pointer;
-    background-image: url("../../images/arrow_left_yellow.png");
-}
-
-.newslist__btn-right {
-    margin: 0 8px;
-    width: 32px;
-    height: 32px;
-    background-image: url("../../images/arrow_right_white.png");
-    background-size: 32px 32px;
-    border: 0;
-    border-radius: 30px;
-    transition: 0.3s all ease;
-}
-
-.newslist__btn-right:hover {
-    cursor: pointer;
-    background-image: url("../../images/arrow_right_yellow.png");
-}
-
-
-
-.allnews-link {
-    font-weight: 700;
-    color: white;
-    font-size: 12px;
-    padding: 0 0 0 18px;
-    transition: 0.3 all ease;
-}
-
-.allnews-link:hover {
-    text-decoration: none;
-}
-
-.news-viewport {
-    /* position: absolute; 
-    left: calc((100% - 280px)/2);
-    top: -275px;*/
-    margin: 24px 20px 0px 20px;
-    overflow: hidden;
-}
-
-.news-container {
-    width: calc(100% * 3);
-    padding: 0;
-    display: flex;
-    position: relative;
-}
-
-.news-item {
-    margin: 16px 0 0 0;
-    padding: 0;
-}
-
-.newsitem__img {
-    width: 100%;
-}
-
-.newsitem-content {
-    display: flex;
-}
-
-.newsitem-content-date {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-
-}
-
-.newsitem-content__num {
-    margin: 0;
-    font-weight: 600;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-}
-
-.newsitem-content__month {
-    text-align: center;
-    margin: 0;
-    font-weight: 600;
-    font-size: 10px;
-    width: 50px;
-}
-
-.newsitem-content-text {
-    margin: 0 0 0 3px;
-}
-
-.newsitem-content__title {
-    margin:0;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 10px 16px;
-    line-height: 20px;
-    background-color: white;
-    height: 93px;
-}
-
-
-
-.newsitem-content-more-container {
-    margin: 3px auto 0 0;
-    padding: 5px 9px;
-    display: inline-block;
-    background-color: white;
-    vertical-align: middle;    
-}
-
-.newsitem-content-more__more-icon {
-    vertical-align: middle;    
-    
-}
-
-.newsitem-content-more__link {
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 19px;
-    vertical-align: middle;    
-}
-
-
-
-.callback {
-    background-color: #272b31;
-    padding: 44px 0 44px 0;
-}
-
-.callback-container {
-    margin: 0 15px 0 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.section__title_margin {
-    margin-bottom: 40px;
-}
-
-.callback-form__input {
-    background-color: #31363f;
-    color: white;
-    font-size: 11px;
-    border: 0;
-    height: 40px;
-    margin-bottom: 2px;
-    padding-left: 10px;
-}
-
-.callback-form__input::placeholder {
-    color: white;
-    font-size: 11px;
-}
-
-.callback-form__input_highlight {
-    background-color: white;
-    color: black;
-}
-
-.callback-form__input_highlight::placeholder {
-    color: black;
-    font-size: 11px;
-}
-
-.callback-form__error {
-    margin: 0 0 9px 0;
-    color: red;
-    font-size: 12px;
-    visibility: hidden;
-}
-
-textarea.callback-form__input {
-    padding-top: 15px;
-    height: 122px;
-}
-
-.callback-form__submit {
-    color: white;
-    background-color: #f9a03e;
-    height: 49px;
-    border-radius: 30px;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
-    transition: 0.3s all ease;;
-}
-
-.callback-form__submit:hover {
-    background-color: white;
-    color: black;
-
-}
-
-
-
-.popup-form-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 10;
-    visibility: hidden;
-}
-
-.popup-form-container_opened {
-    visibility: inherit;
-}
-
-.popup-form {
-    position: relative;
-    background-color: #272b31;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-}
-
-.popup__close-button {
-    position: absolute;
-    left: 93%;
-    top: -43px;
-    width: 22px;
-    height: 22px;
-    background-image: url("../../images/close_icon.png");
-    background-color: transparent;
-    border: 0;
-    background-size: cover;
-    cursor: pointer;
-    transition: opacity .5s linear;
-}
-
-.section__title_contacts {
-    color: black;
-}
-
-.contacts {
-    padding: 45px 0 0 0;
-    background-color: white;
-}
-
-.contacts-container {
-    padding: 0 15px 50px 15px;
-    font-size: 12px;
-    color: black;
-}
-
-.contacts-block:last-of-type {
-    margin-bottom: 35px;
-}
-
-.contacts-block__title {
-    font-weight: 700;
-    margin: 24px 0 0 0;
-}
-
-.contacts-block__text {
-    margin: 18px 0 0 0;
-    line-height: 33px;
-}
-
-.contacts-block__phone {
-    margin: 24px 0 0 0;
-}
-
-.contacts-block__phone::before {
-    content: 'T:';
-}
-
-.contacts-block__email {
-    margin: 20px 0 0 0;
-}
-
-.contacts__callbtn {
-    color: white;
-    background-color: #f9a03e;
-    height: 49px;
-    width: 176px;
-    border-radius: 30px;
-    border: none;
-    font-size: 12px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 0.3s all ease;;
-}
-
-.contacts__callbtn:hover {
-    background-color: red;
-    color: white;
-
-}
-
-.contacts-map {
-    width: 100vw;
-    height: 380px;
-}
-
-
-.footer {
-    padding: 35px 0 0 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 55px 20px;
-    margin: 25px 0 0 0;
-}
-
-.footer__text {
-    margin: 0 0 4px 0;
-    color: white;
-    font-size: 10px;
-}
-.footer__link {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 4px 0;
-    color: white;
-    font-size: 10px;
-    text-decoration: none;
-}
-
-.logo_footer {
-    margin-left: 20px;
-}
 
 

@@ -1,0 +1,10 @@
+.callback-form__input_highlight {
+    background-color: white;
+    color: black;
+}
+
+.callback-form__input_highlight::placeholder {
+    color: black;
+    font-size: 11px;
+}
+
