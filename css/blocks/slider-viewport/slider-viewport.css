@@ -1,0 +1,7 @@
+.slider-viewport {
+    position: absolute;
+    left: calc((100% - 280px)/2);
+    top: -275px;
+    width: 280px;
+    overflow: hidden;
+} 

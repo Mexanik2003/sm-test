@@ -1,0 +1,8 @@
+.slide-descr__text {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    width: 357px;
+    word-wrap: normal;
+    display: none;
+}

@@ -1,0 +1,7 @@
+.slide-descr__icon {
+    width: 72px;
+    height: 72px;
+    background-image: url("../../../../images/slider_descr_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}

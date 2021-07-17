@@ -1,0 +1,5 @@
+.slider-buttons {
+    position: absolute;
+    left: calc((100% - 280px)/2);;
+    top: -160px;
+}

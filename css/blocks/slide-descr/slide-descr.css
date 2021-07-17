@@ -1,0 +1,8 @@
+.slide-descr {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background-color: #e48114;
+    left: 50%;
+    transform: translate(-50%,-121px);
+}

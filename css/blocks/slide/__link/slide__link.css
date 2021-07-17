@@ -1,0 +1,14 @@
+.slide__link {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    background-image: url("../../../../images/slidertext_mask_320.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px 0;
+    transform: translateY(-144px)
+}

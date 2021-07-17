@@ -1,0 +1,7 @@
+.slider {
+    position: relative;
+    width: calc(100% * 5);
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
