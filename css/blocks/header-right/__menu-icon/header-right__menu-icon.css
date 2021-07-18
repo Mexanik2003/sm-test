@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1019px)  {
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
     .header-right__menu-icon {
         width: 32px;
         height: 30px;

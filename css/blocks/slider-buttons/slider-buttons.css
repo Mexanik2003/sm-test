@@ -4,7 +4,7 @@
     top: 244px;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1019px)  {
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
     .slider-buttons {
         left: calc((100vw - 640px)/2 + 30px);
         top: 290px;

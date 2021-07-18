@@ -14,7 +14,7 @@
     max-width: 360px;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1019px)  {
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
     .slide__link {
         font-size: 55px;
         line-height: 60px;

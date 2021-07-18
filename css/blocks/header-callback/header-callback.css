@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1019px)  {
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
     .header-callback {
         width: 176px;
         height: 46px;

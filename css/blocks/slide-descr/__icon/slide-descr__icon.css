@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1019px)  {
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
     .slide-descr__icon {
         width: 90px;
         height: 90px;
