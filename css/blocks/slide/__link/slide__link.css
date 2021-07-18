@@ -4,11 +4,12 @@
     font-weight: 400;
     color: white;
     text-decoration: none;
-    background-image: url("../../../../images/slidertext_mask_320.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../../../../images/slidertext_mask_320.png") no-repeat center center;
+    /* background-size: cover; */
     text-align: center;
     line-height: 30px;
     padding: 10px 0;
-    transform: translateY(-144px)
+    transform: translateY(-144px);
+    margin: 0 auto;
+    max-width: 360px;
 }

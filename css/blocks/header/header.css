@@ -1,7 +1,8 @@
 .header {
+    position: relative;
     background-image: url("../../../images/header_bg_1.png");
     background-size: cover;
-    height: 386px;
+    height: calc(100px + 100vw * 0.9);
     padding: 16px 20px 0px 20px;
 }
 

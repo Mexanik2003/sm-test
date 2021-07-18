@@ -1,4 +1,9 @@
 .header-right__menu-icon {
     margin-left: 16px;
+    background: url(../../../../images/mobile_menu_icon_closed.png) center center;
+    width: 28px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
 }
 

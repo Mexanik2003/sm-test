@@ -1,0 +1,10 @@
+.header-callback {
+    display:block;
+    border-radius: 30px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-image: url(../../../../images/tel_icon.png);
+    cursor: pointer;
+}
+

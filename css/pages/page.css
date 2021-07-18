@@ -9,11 +9,14 @@
 @import url(../blocks/section/__title/_contacts/section__title_contacts.css);
 
 @import url(../blocks/header/header.css);
+@import url(../blocks/header-callback/header-callback.css);
 @import url(../blocks/header-container/header-container.css);
 @import url(../blocks/header-right/header-right.css);
 @import url(../blocks/header-right/__menu-icon/header-right__menu-icon.css);
+@import url(../blocks/header-right/__tel-num/header-right__tel-num.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_footer/logo_footer.css);
+@import url(../blocks/main-menu/main-menu.css);
 
 @import url(../blocks/slider-section/slider-section.css);
 @import url(../blocks/slider-viewport/slider-viewport.css);
@@ -109,9 +112,257 @@
 @import url(../blocks/footer/__link/footer__link.css);
 
 
+@media screen and (max-width: 1019px) and (min-width: 720px) {
+    .header {
+        padding: 30px 20px 0px 20px;
+        height: calc(64px + 100vw * 0.6);
+    }
+  
+    .logo {
+        width: 196px;
+    }
+
+    .header-right__tel-num {
+        display: inherit;
+    }
+    
+    .header-callback {
+        width: 176px;
+        height: 46px;
+        background: url(../../images/callback_tel_icon.png) center center;
+    }
+
+    .header-right__menu-icon {
+        width: 32px;
+        height: 30px;
+        margin: 0 14px;
+    }
+
+    .slider-viewport {
+        top: 154px;
+    }
+
+    .slider-buttons {
+        left: calc((100vw - 640px)/2 + 30px);
+        top: 290px;
+    }
+
+    .slider-buttons__btn-left {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slider-buttons__btn-right {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slide__img {
+        width: calc(100vw - 128px);
+        height: calc(100vw/1.74);
+        object-fit: cover;
+        margin: auto;
+        display: block;
+    }
+    
+    .slide__link {
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 60px;
+        transform: translateY(-241px);
+        max-width: 768px;
+        background: url(../../images/slidertext_mask_760.png) no-repeat center center;
+        padding: 15px 0 20px 0;
+    }
+
+    .slide-descr {
+        transform: translate(-50%,-200px);
+    }
+
+    .slide-descr__icon {
+        width: 90px;
+        height: 90px;
+        background-size: 40px 40px;
+    }
+
+}
 
 
+@media screen and (max-width: 1919px) and (min-width: 1020px) {
+    .header {
+        padding: 26px 32px 0px 26px;
+        height: calc(92px + 100vw * 0.42);
+    }
+  
+    .logo {
+        width: 196px;
+    }
 
+    .header-right__tel-num {
+        display: inherit;
+    }
+    
+    .header-callback {
+        width: 176px;
+        height: 46px;
+        background: url(../../images/callback_tel_icon.png) center center;
+    }
 
+    .header-right__menu-icon {
+        display: none;    
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-menu__link {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 17px;
+    }
+
+    .slider-viewport {
+        top: 151px;
+    }
+
+    .slider-buttons {
+        left: calc((100vw - 840px)/2 + 17px);
+        top: 346px;
+    }
+
+    .slider-buttons__btn-left {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slider-buttons__btn-right {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slide__img {
+        width: calc(100vw - 184px);
+        height: calc(100vw / 2.32);
+    }
+    
+    .slide__link {
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 60px;
+        transform: translateY(-187px);
+        max-width: 1020px;
+        background: url(../../images/slidertext_mask_1020.png) no-repeat center center;
+        padding: 15px 0 20px 0;
+    }
+
+    .slide-descr {
+        transform: translate(calc(-50% + 175px),-159px);
+    }
+
+    .slide-descr__icon {
+        width: 90px;
+        height: 90px;
+        background-size: 40px 40px;
+    }
+
+    .slide-descr__text {
+        display: inherit;
+    }
+
+}
+
+    @media screen and (min-width: 1920px) {
+        .header {
+            padding: 47px 159px 0px 156px;
+            height: calc(92px + 100vw * 0.42);
+        }
+      
+        .logo {
+            width: 249px;
+        }
+    
+        .header-right__tel-num {
+            display: inherit;
+            letter-spacing: 1.5px;
+            padding-right: 30px;
+        }
+        
+        .header-callback {
+            width: 212px;
+            height: 58px;
+            background: url(../../images/callback_tel_icon.png) center center;
+        }
+    
+        .header-right__menu-icon {
+            display: none;    
+        }
+    
+        .main-menu {
+            display: flex;
+            justify-content: center;
+            transform: translateY(-65px);
+        }
+    
+        .main-menu__link {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 17px;
+        }
+    
+        .slider-viewport {
+            top: 151px;
+        }
+    
+        .slider-buttons {
+            left: calc((100vw - 840px)/2 + 17px);
+            top: 346px;
+        }
+    
+        .slider-buttons__btn-left {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .slider-buttons__btn-right {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .slide__img {
+            width: calc(100vw - 184px);
+            height: calc(100vw / 2.32);
+        }
+        
+        .slide__link {
+            font-size: 55px;
+            font-weight: 400;
+            line-height: 60px;
+            transform: translateY(-187px);
+            max-width: 1020px;
+            background: url(../../images/slidertext_mask_1920.png) no-repeat center center;
+            padding: 15px 0 20px 0;
+        }
+    
+        .slide-descr {
+            transform: translate(calc(-50% + 175px),-159px);
+        }
+    
+        .slide-descr__icon {
+            width: 90px;
+            height: 90px;
+            background-size: 40px 40px;
+        }
+    
+        .slide-descr__text {
+            display: inherit;
+        }
+    
+    }
 
 

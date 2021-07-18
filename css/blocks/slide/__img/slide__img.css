@@ -1,5 +1,6 @@
 .slide__img {
     width: 100%;
     object-fit: cover;
-    object-position: 0;
+    margin: auto;
+    display: block;
 }
