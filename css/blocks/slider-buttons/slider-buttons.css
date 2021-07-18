@@ -3,3 +3,24 @@
     left: 20px;
     top: 244px;
 }
+
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+    .slider-buttons {
+        left: calc((100vw - 640px)/2 + 30px);
+        top: 290px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .slider-buttons {
+        left: calc((100vw - 840px)/2 + 17px);
+        top: 346px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .slider-buttons {
+        left: calc((100vw - 1106px)/2 + 32px);
+        top: 445px;
+    }
+}

@@ -6,3 +6,23 @@
     padding: 16px 20px 0px 20px;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+    .header {
+        padding: 30px 20px 0px 20px;
+        height: calc(64px + 100vw * 0.6);
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .header {
+        padding: 26px 32px 0px 26px;
+        height: calc(92px + 100vw * 0.42);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header {
+        padding: 47px 159px 0px 156px;
+        height: calc(407px + 100vw * 0.126);
+    }
+}

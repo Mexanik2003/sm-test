@@ -6,3 +6,23 @@
     padding-right: 20px;
 
 }
+
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+    .header-right__tel-num {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .header-right__tel-num {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header-right__tel-num {
+        display: inherit;
+        letter-spacing: 1.5px;
+        padding-right: 30px;
+    }
+}
