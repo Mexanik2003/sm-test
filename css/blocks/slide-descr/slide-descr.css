@@ -6,3 +6,21 @@
     left: 50%;
     transform: translate(-50%,-121px);
 }
+
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+    .slide-descr {
+        transform: translate(-50%,-200px);
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .slide-descr {
+        transform: translate(calc(-50% + 175px),-159px);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .slide-descr {
+        transform: translate(calc(-50% + 253px),-198px);
+    }
+}

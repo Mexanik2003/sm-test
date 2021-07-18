@@ -4,3 +4,24 @@
     margin: auto;
     display: block;
 }
+
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+    .slide__img {
+        width: calc(100vw - 128px);
+        height: calc(100vw/1.74);
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .slide__img {
+        width: calc(100vw - 184px);
+        height: calc(100vw / 2.32);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .slide__img {
+        width: calc(100vw - 814px);
+        height: calc(100vw / 3.05);
+    }
+}

@@ -117,39 +117,6 @@
   
 
         
-    .slider-buttons__btn-right {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .slide__img {
-        width: calc(100vw - 128px);
-        height: calc(100vw/1.74);
-        object-fit: cover;
-        margin: auto;
-        display: block;
-    }
-    
-    .slide__link {
-        font-size: 55px;
-        font-weight: 400;
-        line-height: 60px;
-        transform: translateY(-241px);
-        max-width: 768px;
-        background: url(../../images/slidertext_mask_760.png) no-repeat center center;
-        padding: 15px 0 20px 0;
-    }
-
-    .slide-descr {
-        transform: translate(-50%,-200px);
-    }
-
-    .slide-descr__icon {
-        width: 90px;
-        height: 90px;
-        background-size: 40px 40px;
-    }
-
 }
 
 
@@ -157,84 +124,13 @@
   
 
     
-    
-    .slider-buttons__btn-right {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .slide__img {
-        width: calc(100vw - 184px);
-        height: calc(100vw / 2.32);
-    }
-    
-    .slide__link {
-        font-size: 55px;
-        font-weight: 400;
-        line-height: 60px;
-        transform: translateY(-187px);
-        max-width: 1020px;
-        background: url(../../images/slidertext_mask_1020.png) no-repeat center center;
-        padding: 15px 0 20px 0;
-    }
-
-    .slide-descr {
-        transform: translate(calc(-50% + 175px),-159px);
-    }
-
-    .slide-descr__icon {
-        width: 90px;
-        height: 90px;
-        background-size: 40px 40px;
-    }
-
-    .slide-descr__text {
-        display: inherit;
-    }
-
 }
 
-    @media screen and (min-width: 1920px) {
-      
+@media screen and (min-width: 1920px) {
     
+
+
     
-        
-        .slider-buttons__btn-right {
-            width: 50px;
-            height: 50px;
-        }
-        
-        .slide__img {
-            width: calc(100vw - 814px);
-            height: calc(100vw / 3.05);
-        }
-        
-        .slide__link {
-            font-size: 61px;
-            letter-spacing: 4px;
-            font-weight: 400;
-            line-height: 100px;
-            transform: translateY(-249px);
-            max-width: 1300px;
-            background: url(../../images/slidertext_mask_1920.png) no-repeat center center;
-            padding: 15px 0 20px 0;
-        }
-    
-        .slide-descr {
-            transform: translate(calc(-50% + 253px),-198px);
-        }
-    
-        .slide-descr__icon {
-            width: 90px;
-            height: 90px;
-            background-size: 40px 40px;
-        }
-    
-        .slide-descr__text {
-            display: inherit;
-            width: 407px;
-        }
-    
-    }
+}
 
 

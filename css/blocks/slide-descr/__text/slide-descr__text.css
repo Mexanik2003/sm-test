@@ -6,3 +6,20 @@
     word-wrap: normal;
     display: none;
 }
+
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .slide-descr__text {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .slide-descr__text {
+        display: inherit;
+        width: 407px;
+    }
+}

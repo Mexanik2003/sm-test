@@ -13,3 +13,37 @@
     margin: 0 auto;
     max-width: 360px;
 }
+
+@media screen and (min-width: 720px) and (max-width: 1019px)  {
+    .slide__link {
+        font-size: 55px;
+        line-height: 60px;
+        transform: translateY(-241px);
+        max-width: 768px;
+        background: url(../../../../images/slidertext_mask_760.png) no-repeat center center;
+        padding: 15px 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .slide__link {
+        font-size: 55px;
+        line-height: 60px;
+        transform: translateY(-187px);
+        max-width: 1020px;
+        background: url(../../../../images/slidertext_mask_1020.png) no-repeat center center;
+        padding: 15px 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .slide__link {
+        font-size: 61px;
+        letter-spacing: 4px;
+        line-height: 100px;
+        transform: translateY(-249px);
+        max-width: 1300px;
+        background: url(../../../../images/slidertext_mask_1920.png) no-repeat center center;
+        padding: 15px 0 20px 0;
+    }
+}
