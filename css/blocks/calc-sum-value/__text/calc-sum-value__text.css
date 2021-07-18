@@ -1,7 +1,25 @@
 .calc-sum-value__text {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
     color: white;
     margin: 0 0 10px 0;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .calc-sum-value__text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .calc-sum-value__text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .calc-sum-value__text {
+        font-size: 30px;
+    }
 }

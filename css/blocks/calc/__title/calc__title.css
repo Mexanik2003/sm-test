@@ -4,3 +4,30 @@
     font-size: 36px;
 
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .calc__title {
+        font-weight: 900;
+        color: white;
+        font-size: 53.5px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .calc__title {
+        font-weight: 900;
+        color: white;
+        font-size: 53.5px;
+        max-width: 345px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .calc__title {
+        font-weight: 900;
+        color: white;
+        font-size: 66.5px;
+        max-width: 345px;
+        letter-spacing: 3px;
+    }
+}

@@ -1,0 +1,17 @@
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .pick-container-right {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .pick-container-right {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .pick-container-right {
+        width: 50%;
+    }
+}

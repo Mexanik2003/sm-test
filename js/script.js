@@ -223,6 +223,11 @@ $(document).ready(function() {
         $("#popup-form-container").addClass('popup-form-container_opened');
     });
 
+    $("#header-callback").click(function(event) {
+        event.preventDefault();
+        $("#popup-form-container").addClass('popup-form-container_opened');
+    });
+
     $("#popup__close-button").click(closePopupForm);
     $("#popup-form-container").click(closePopupFormByOver);
     

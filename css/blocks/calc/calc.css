@@ -4,3 +4,21 @@
     padding: 50px 0 580px 0;
 
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .calc {
+        padding: 102px 0 563px 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .calc {
+        padding: 91px 0 389px 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .calc {
+        padding: 58px 0 401px 0;
+    }
+}

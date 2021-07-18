@@ -7,3 +7,21 @@
     font-size: 12px;
     padding: 8px 0 0 6px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .formfield__select {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .formfield__select {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .formfield__select {
+        width: 100%;
+    }
+}

@@ -48,6 +48,7 @@
 
 @import url(../blocks/calc/calc.css);
 @import url(../blocks/calc-inner/calc-inner.css);
+@import url(../blocks/calc-form/calc-form.css);
 @import url(../blocks/calc-form-container/calc-form-container.css);
 @import url(../blocks/calc/__title/calc__title.css);
 @import url(../blocks/formfield/__title/formfield__title.css);
@@ -55,6 +56,9 @@
 @import url(../blocks/slider-weight/slider-weight.css);
 @import url(../blocks/slider-weight-value/slider-weight-value.css);
 @import url(../blocks/slider-weight-slider/slider-weight-slider.css);
+@import url(../blocks/pick-container/pick-container.css);
+@import url(../blocks/pick-container-left/pick-container-left.css);
+@import url(../blocks/pick-container-right/pick-container-right.css);
 @import url(../blocks/pick-container/pick-container.css);
 @import url(../blocks/pick-container/__radio/pick-container__radio.css);
 @import url(../blocks/pick-container/__check/pick-container__check.css);
@@ -119,11 +123,6 @@
 @media screen and (min-width: 760px) and (max-width: 1019px)  {
 
 
-    .description__text {
-        font-size: 18px;
-        line-height: 27px;
-        margin: 43px 0 0 0;
-    }
 
 }
 
@@ -136,13 +135,6 @@
 
 
 
-    .description__text {
-        font-size: 18px;
-        line-height: 30px;
-        margin: 18px 0 32px 0;
-    }
-
-    
 }
 
 
@@ -150,18 +142,6 @@
 
 @media screen and (min-width: 1920px) {
 
-
-
-
-    .description__text {
-        font-size: 18.5px;
-        line-height: 30px;
-        margin: 4px 0 37px 0;
-    }
-
-
-
-    
 
 
     

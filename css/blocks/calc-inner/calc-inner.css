@@ -5,3 +5,27 @@
     position: absolute;
     background-color: #f88a11;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .calc-inner {
+        height: 680px;
+        width: calc(100% - 120px);
+        left: 60px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .calc-inner {
+        height: 558px;
+        width: calc(100% - 180px);
+        left: 93px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .calc-inner {
+        height: 576px;
+        width: calc(100% - 789px);
+        left: 420px;
+    }
+}

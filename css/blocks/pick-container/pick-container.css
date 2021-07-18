@@ -3,3 +3,24 @@
     flex-direction: column;
     margin: 0 0 0 0;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .pick-container {
+        flex-direction: row;
+        padding: 11px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .pick-container {
+        flex-direction: row;
+        padding: 45px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .pick-container {
+        flex-direction: row;
+        padding: 45px 0 0 0;
+    }
+}

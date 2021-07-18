@@ -158,7 +158,7 @@
       <div class="calc-inner">
         <div class="calc-form-container">
           <h2 class="calc__title">Расчет доставки</h2>
-          <form id="calc-form">
+          <form id="calc-form" class="calc-form">
             <p class="formfield__title">Откуда</p>
             <select id="from" name="from" class="formfield__select">
               <option value='1'>Москва</option>
@@ -178,26 +178,30 @@
               <input type="text" id="weight" name="weight" readonly style="visibility: hidden;">
             </div>
             <div class="pick-container">
-              <div class="pick-container-radio">
-                <label  for="get-variant1" class="formfield__title">
-                  <input class="pick-container__radio" type="radio" id="get-variant1"  name="get-variant" checked>
-                  <span class="pick-container__radio-custom"></span>  
-                  Забрать курьером
-                </label>
+              <div class="pick-container-left">
+                <div class="pick-container-radio">
+                  <label  for="get-variant1" class="formfield__title">
+                    <input class="pick-container__radio" type="radio" id="get-variant1"  name="get-variant" checked>
+                    <span class="pick-container__radio-custom"></span>  
+                    Забрать курьером
+                  </label>
+                </div>
+                <div class="pick-container-radio">
+                  <label  for="get-variant2" class="formfield__title">
+                    <input class="pick-container__radio" type="radio" id="get-variant2" name="get-variant">
+                    <span class="pick-container__radio-custom"></span>  
+                    Заберу сам
+                  </label>
+                </div>
               </div>
-              <div class="pick-container-radio">
-                <label  for="get-variant2" class="formfield__title">
-                  <input class="pick-container__radio" type="radio" id="get-variant2" name="get-variant">
-                  <span class="pick-container__radio-custom"></span>  
-                  Заберу сам
-                </label>
-              </div>
-              <div class="pick-container-radio">
-                <label for="insurance" class="formfield__title">
-                  <input class="pick-container__check" type="checkbox" id="insurance" name="insurance" checked>
-                  <span class="pick-container__check-custom"></span>  
-                  Страхование груза
-                </label>
+              <div class="pick-container-right">
+                <div class="pick-container-radio">
+                  <label for="insurance" class="formfield__title">
+                    <input class="pick-container__check" type="checkbox" id="insurance" name="insurance" checked>
+                    <span class="pick-container__check-custom"></span>  
+                    Страхование груза
+                  </label>
+                </div>
               </div>
             </div>
             <button id="calc-form-submit" class="calc-form__submit">Рассчитать стоимость</button>
