@@ -9,3 +9,26 @@
 	background-image: linear-gradient(to right, #e9574b, #f9a141);    margin: 0;
     padding: 0 20px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .description__title {
+        font-size: 63px;
+        line-height: 93px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .description__title {
+        font-size: 63px;
+        line-height: 77px;
+        padding: 0 0 0 27px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .description__title {
+        font-size: 80px;
+        line-height: 85px;
+        padding: 0 0 0 331px;
+    }
+}

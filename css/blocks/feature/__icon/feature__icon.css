@@ -1,0 +1,25 @@
+.feature__icon {
+    width: 52px;
+    height: 52px;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .feature__icon {
+        width: 67px;
+        height: 67px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .feature__icon {
+        width: 67px;
+        height: 67px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .feature__icon {
+        width: 67px;
+        height: 67px;
+    }
+}

@@ -4,3 +4,31 @@
     margin: auto auto auto 27px;
     color: white;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .feature__text {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        margin: auto auto auto 37px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .feature__text {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        margin: 27px 25px 0 22px;
+        text-align: center;
+        max-width: 151px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .feature__text {
+        font-size: 24px;
+        letter-spacing: 0.2px;
+        margin: 32px 25px 0 22px;
+        text-align: center;
+        max-width: 200px;
+    }    
+}

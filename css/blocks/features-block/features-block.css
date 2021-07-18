@@ -2,3 +2,25 @@
     margin: 0;
     padding: 98px 0 0 20px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .features-block {
+        padding: 164px 0 61px 207px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .features-block {
+        padding: 125px 9px 61px 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .features-block {
+        padding: 145px 190px 100px 254px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

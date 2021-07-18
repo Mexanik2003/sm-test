@@ -24,6 +24,7 @@
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/slide/slide.css);
 @import url(../blocks/slide/__img/slide__img.css);
+@import url(../blocks/slide/__overlay/slide__overlay.css);
 @import url(../blocks/slider-buttons/slider-buttons.css);
 @import url(../blocks/slider-buttons/__btn-left/slider-buttons__btn-left.css);
 @import url(../blocks/slider-buttons/__btn-right/slider-buttons__btn-right.css);
@@ -37,9 +38,11 @@
 @import url(../blocks/delivery-features/delivery-features.css);
 @import url(../blocks/features-block/features-block.css);
 @import url(../blocks/feature/feature.css);
+@import url(../blocks/feature/__icon/feature__icon.css);
 @import url(../blocks/feature/__text/feature__text.css);
 
 @import url(../blocks/description/description.css);
+@import url(../blocks/description-textblock/description-textblock.css);
 @import url(../blocks/description/__title/description__title.css);
 @import url(../blocks/description/__text/description__text.css);
 
@@ -114,19 +117,50 @@
 
 
 @media screen and (min-width: 760px) and (max-width: 1019px)  {
-  
 
-        
+
+    .description__text {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 43px 0 0 0;
+    }
+
 }
 
 
+
+
+
 @media screen and (min-width: 1020px) and (max-width: 1919px)  {
-  
+
+
+
+
+    .description__text {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 18px 0 32px 0;
+    }
 
     
 }
 
+
+
+
 @media screen and (min-width: 1920px) {
+
+
+
+
+    .description__text {
+        font-size: 18.5px;
+        line-height: 30px;
+        margin: 4px 0 37px 0;
+    }
+
+
+
     
 
 
