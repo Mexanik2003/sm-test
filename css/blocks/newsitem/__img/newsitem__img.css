@@ -1,3 +1,6 @@
 .newsitem__img {
-    width: calc(100vw - 40px);
+    /* width: calc(100vw - 40px); */
+    height: calc((100vw - 40px) * 0.68);
+    object-fit: cover;
+    width: 100%;
 }

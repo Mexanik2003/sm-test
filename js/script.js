@@ -250,7 +250,7 @@ $(document).ready(function() {
 
 
     $('.newslist__btn-right').click(function() {
-        if (viewSlideNews < 2) {
+        if (viewSlideNews < 1) {
             viewSlideNews++;
         } else {
             viewSlideNews = 0;
@@ -263,7 +263,7 @@ $(document).ready(function() {
         if (viewSlideNews > 0) {
             viewSlideNews--;
         } else {
-            viewSlideNews = 2;
+            viewSlideNews = 1;
         }
         sliderNews.animate({'left': -viewSlideNews * viewportNews + "px"}, {'duration': 500})  
     });
