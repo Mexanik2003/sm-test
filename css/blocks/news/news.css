@@ -3,3 +3,21 @@
     width: 100%;
     padding-bottom: 50px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .news {
+        padding-bottom: 132px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .news {
+        padding-bottom: 137px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .news {
+        padding-bottom: 128px;
+    }
+}

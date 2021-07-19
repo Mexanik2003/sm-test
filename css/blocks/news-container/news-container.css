@@ -4,3 +4,21 @@
     display: flex;
     position: relative;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .news-container {
+        width: calc(100vw * 2);
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .news-container {
+        width: calc(100vw * 1.33333);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .news-container {
+        width: 100%;
+    }
+}

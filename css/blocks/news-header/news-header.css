@@ -3,3 +3,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .news-header {
+        padding: 239px 15px 0 15px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .news-header {
+        padding: 262px 19px 0 28px;;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .news-header {
+        padding: 245px 303px 0 28px;
+    }
+}

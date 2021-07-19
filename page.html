@@ -303,44 +303,61 @@
     <section class="callback">
       <form id="callback-form" class="callback-container" action="#">
         <h2 class="section__title section__title_margin">Свяжитесь с&nbsp;нами</h2>
-        <input id="callback-name" class="callback-form__input" type="text" placeholder="Ваше имя *"   id="name">
-        <p id="callback-name-error" class="callback-form__error">Обязательное поле</p>
-        <input id="callback-phone" class="callback-form__input" type="text" placeholder="Телефон *"    id="phone">
-        <p id="callback-phone-error" class="callback-form__error">Обязательное поле</p>
-        <input id="callback-email" class="callback-form__input" type="text" placeholder="E-mail *"     id="email">
-        <p id="callback-email-error" class="callback-form__error">Введите корректный email</p>
-        <textarea id="callback-text" class="callback-form__input" placeholder="Сообщение *" id="text"></textarea>
-        <p id="callback-text-error" class="callback-form__error">Обязательное поле</p>
-        <button class="callback-form__submit" type="submit">Отправить</button>
+        <div class="callback-form-container">
+          <div class="callback-form-left">
+            <div class="callback-form-input">
+              <input id="callback-name" class="callback-form__input" type="text" placeholder="Ваше имя *"   id="name">
+              <p id="callback-name-error" class="callback-form__error">Обязательное поле</p>
+
+            </div>
+            <div class="callback-form-input">
+              <input id="callback-phone" class="callback-form__input" type="text" placeholder="Телефон *"    id="phone">
+              <p id="callback-phone-error" class="callback-form__error">Обязательное поле</p>
+          </div>
+          <div class="callback-form-input">
+              <input id="callback-email" class="callback-form__input" type="text" placeholder="E-mail *"     id="email">
+              <p id="callback-email-error" class="callback-form__error">Введите корректный email</p>
+          </div>
+        </div>
+        <div class="callback-form-right">
+          <div class="callback-form-input">
+            <textarea id="callback-text" class="callback-form__input" placeholder="Сообщение *" id="text"></textarea>
+            <p id="callback-text-error" class="callback-form__error">Обязательное поле</p>
+          </div>
+        </div>
+      </div>
+      <button class="callback-form__submit" type="submit">Отправить</button>
       </form>
     </section>
 
     
     <section class="contacts">
-      <div class="contacts-container">
-        <h2 class="section__title section__title_contacts">Контакты</h2>
-        <div class="contacts-block">
-          <p class="contacts-block__title">
-            Наш офис
-          </p>
-          <p class="contacts-block__text">
-            Россия, 620014, Екатеринбург ул. Маршала Жукова, 10
-          </p>
+      <div class="contacts-inner">
+        <div class="contacts-container">
+          <h2 class="section__title section__title_contacts">Контакты</h2>
+          <div class="contacts-block">
+            <p class="contacts-block__title">
+              Наш офис
+            </p>
+            <p class="contacts-block__text">
+              Россия, 620014, Екатеринбург ул. Маршала Жукова, 10
+            </p>
+          </div>
+          <div class="contacts-block">
+            <p class="contacts-block__title">
+              Вы можете связаться с нами
+            </p>
+            <p class="contacts-block__phone">
+              +7 (343) 999-88-77
+            </p>
+            <p class="contacts-block__email">
+              example@mail.com
+            </p>
+          </div>
+          <button id="contacts-callbtn" class="contacts__callbtn">Заказать звонок</button>
         </div>
-        <div class="contacts-block">
-          <p class="contacts-block__title">
-            Вы можете связаться с нами
-          </p>
-          <p class="contacts-block__phone">
-            +7 (343) 999-88-77
-          </p>
-          <p class="contacts-block__email">
-            example@mail.com
-          </p>
-        </div>
-        <button id="contacts-callbtn" class="contacts__callbtn">Заказать звонок</button>
+        <div class="contacts__map" id="map"></div>
       </div>
-      <div class="contacts__map" id="map"></div>
     </section>
       
   </main>

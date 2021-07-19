@@ -1,0 +1,30 @@
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .news-header__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 58px 0 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .news-header__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 58px 0 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .news-header__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 47px 0 299px;
+        width: 100%;
+    }
+}

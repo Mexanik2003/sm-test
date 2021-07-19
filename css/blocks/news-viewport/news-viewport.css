@@ -2,3 +2,21 @@
     margin: 24px 20px 0px 20px;
     overflow: hidden;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .news-viewport {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .news-viewport {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .news-viewport {
+        margin: 24px 289px 0 294px;
+    }
+}

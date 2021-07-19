@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .callback-form-left {
+        width: 50%;
+        margin: 0 24px 0 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .callback-form-left {
+        width: 41%;
+        margin: 0 24px 0 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .callback-form-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+}
