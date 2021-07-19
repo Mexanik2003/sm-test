@@ -127,12 +127,28 @@
 
 @media screen and (min-width: 760px) and (max-width: 1019px)  {
 
+    .contacts {
+        padding: 65px 10px 0 10px;
+    }
 
-
-
+    .contacts-block-inner {
+        display: flex;
+        margin: 29px 0px 0 0;
+    }
     
+    .contacts-block {
+        margin: 0 77px 0 0;
+        width: 50%;
+    }
 
+    .contacts-block__title {
+        font-weight: 700;
+        font-size: 17px;
+    }
 
+    .contacts-block__text {
+        font-size: 16px;
+    }
 
 
 
