@@ -245,12 +245,24 @@ $(document).ready(function() {
 
 
     let viewportNews = $(".news-viewport").width(); // Ширина видимой части
+    let newsCount = $('.newsitem').length;
+    let windowWidth = $(window).width();
+    let devider = 1;
+    if (windowWidth >= 760 && windowWidth < 1020) {
+        devider = 2;
+    } else if (windowWidth >= 1020 && windowWidth < 1920) {
+        devider = 3;
+    } else if (windowWidth >= 1920) {
+        devider = 4;
+    }
+
+    $(".news-container").css("width" , viewportNews * newsCount / devider);
     let sliderNews = $("div.news-container"); // Весь слайдер
     let viewSlideNews = 0; // Номер слайда
 
 
     $('.newslist__btn-right').click(function() {
-        if (viewSlideNews < 1) {
+        if (viewSlideNews < newsCount/devider - 1) {
             viewSlideNews++;
         } else {
             viewSlideNews = 0;
@@ -263,7 +275,7 @@ $(document).ready(function() {
         if (viewSlideNews > 0) {
             viewSlideNews--;
         } else {
-            viewSlideNews = 1;
+            viewSlideNews = newsCount/devider - 1;
         }
         sliderNews.animate({'left': -viewSlideNews * viewportNews + "px"}, {'duration': 500})  
     });
