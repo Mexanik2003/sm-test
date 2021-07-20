@@ -16,3 +16,27 @@
     color: white;
 
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .contacts__callbtn {
+        width: 200px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .contacts__callbtn {
+        width: 200px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contacts__callbtn {
+        width: 200px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

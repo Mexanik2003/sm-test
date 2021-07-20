@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .footer-rightblock {
+        margin: 0 0 0 80px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .footer-rightblock {
+        margin: 0 5px 0 60px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer-rightblock {
+        margin: 0 5px 0 60px;
+        display: flex;
+        align-items: center;
+    }
+}

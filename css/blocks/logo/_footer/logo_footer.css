@@ -1,3 +1,27 @@
 .logo_footer {
     margin-left: 20px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .logo_footer {
+        margin: 0;
+        object-fit: contain;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .logo_footer {
+        margin: 0;
+        object-fit: contain;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .logo_footer {
+        margin: 0;
+        object-fit: contain;
+        width: 200px;
+    }
+}

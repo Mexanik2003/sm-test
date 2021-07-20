@@ -2,3 +2,27 @@
     width: 100vw;
     height: 380px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .contacts__map {
+        width: 100vw;
+        height: 525px;
+        margin: 15px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .contacts__map {
+        width: 100vw;
+        height: 650px;
+        margin: 0 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contacts__map {
+        width: 100vw;
+        height: 650px;
+        margin: 0 0 0 0;
+    }
+}

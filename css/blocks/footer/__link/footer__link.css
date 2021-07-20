@@ -6,3 +6,23 @@
     font-size: 10px;
     text-decoration: none;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .footer__link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .footer__link {
+        font-size: 13px;
+        margin: 0px 20px 0 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer__link {
+        font-size: 13px;
+        margin: 0px 20px 0 0;
+    }
+}

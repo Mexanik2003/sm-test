@@ -1,3 +1,36 @@
 .contacts-block:last-of-type {
     margin-bottom: 35px;
 }
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .contacts-block {
+        margin: 0 77px 0 0;
+        width: 50%;
+    }
+
+    .contacts-block:last-of-type {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .contacts-block {
+        margin: 0 77px 0 0;
+        width: 80%;
+    }
+
+    .contacts-block:last-of-type {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contacts-block {
+        margin: 0 77px 46px 0;
+        width: 80%;
+    }
+
+    .contacts-block:last-of-type {
+        margin-bottom: 24px;
+    }
+}

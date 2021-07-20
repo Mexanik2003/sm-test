@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 760px) and (max-width: 1019px)  {
+    .contacts-block-inner {
+        display: flex;
+        margin: 29px 0px 0 0;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1919px)  {
+    .contacts-block-inner {
+        display: flex;
+        flex-direction: column;
+        margin: 29px 0px 40px 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contacts-block-inner {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0px 21px 0;
+    }
+}

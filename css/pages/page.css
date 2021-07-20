@@ -110,103 +110,22 @@
 @import url(../blocks/popup-form/__close-button/popup-form__close-button.css);
 
 @import url(../blocks/contacts/contacts.css);
+@import url(../blocks/contacts-inner/contacts-inner.css);
 @import url(../blocks/contacts/__callbtn/contacts__callbtn.css);
 @import url(../blocks/contacts/__map/contacts__map.css);
 @import url(../blocks/contacts-container/contacts-container.css);
 @import url(../blocks/contacts-block/contacts-block.css);
+@import url(../blocks/contacts-block-inner/contacts-block-inner.css);
 @import url(../blocks/contacts-block/__title/contacts-block__title.css);
 @import url(../blocks/contacts-block/__text/contacts-block__text.css);
 @import url(../blocks/contacts-block/__phone/contacts-block__phone.css);
 @import url(../blocks/contacts-block/__email/contacts-block__email.css);
 
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer-leftblock/footer-leftblock.css);
+@import url(../blocks/footer-rightblock/footer-rightblock.css);
 @import url(../blocks/footer-container/footer-container.css);
 @import url(../blocks/footer/__text/footer__text.css);
 @import url(../blocks/footer/__link/footer__link.css);
-
-
-@media screen and (min-width: 760px) and (max-width: 1019px)  {
-
-    .contacts {
-        padding: 65px 10px 0 10px;
-    }
-
-    .contacts-block-inner {
-        display: flex;
-        margin: 29px 0px 0 0;
-    }
-    
-    .contacts-block {
-        margin: 0 77px 0 0;
-        width: 50%;
-    }
-
-    .contacts-block__title {
-        font-weight: 700;
-        font-size: 17px;
-    }
-
-    .contacts-block__text {
-        font-size: 16px;
-    }
-
-
-
-
-}
-
-
-
-
-
-@media screen and (min-width: 1020px) and (max-width: 1919px)  {
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-@media screen and (min-width: 1920px) {
-
-
-
-
-    
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-    
-}
 
 
