@@ -11,4 +11,4 @@ HTML
 CSS   
 JQuery
  
-### Посмотреть результат: [Github-pages](https://mexanik2003.github.io/sm-test/page.html)
+### Посмотреть результат: [Github-pages](https://mexanik2003.github.io/sm-test/)
